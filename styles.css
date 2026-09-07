@@ -25,8 +25,8 @@ body{
 .brand h1,.subtitle{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
 .top-actions{margin-left:auto; flex-shrink:0; display:flex; gap:8px; align-items:center}
 .top-actions .btn{padding:6px 14px; font-size:13px; border-radius:999px}
-#btnHelp{background:#f0f9ff; border-color:#bae6fd; color:var(--blue-dark)}
-#btnHelp:hover{background:#e0f2fe; filter:none}
+#btnHelp{background:linear-gradient(135deg,#38bdf8,var(--blue)); border-color:transparent; color:#fff}
+#btnHelp:hover{filter:brightness(1.07)}
 .logo{
   width:46px; height:46px; border-radius:14px; display:grid; place-items:center; overflow:hidden; flex-shrink:0;
   background:linear-gradient(135deg,var(--green),var(--blue)); box-shadow:0 4px 14px rgba(16,185,129,.35);
