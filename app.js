@@ -473,7 +473,6 @@ document.addEventListener("keydown", (e) => {
   }
   if ($("viewTrain").hidden) return; // дальше — только экран тренировки
   if (e.key === " ") { e.preventDefault(); flipped ? unflip() : flip(); } // пробел — туда-обратно
-  else if (e.key === "Enter") { e.preventDefault(); flip(); }
   if (!flipped) return;
   if (e.key === "1") grade("bad");
   if (e.key === "2") grade("mid");
