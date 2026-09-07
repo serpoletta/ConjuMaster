@@ -1,9 +1,9 @@
 /* ConjuMaster service worker — офлайн-режим для PWA.
    При изменении файлов приложения подними версию CACHE. */
-const CACHE = "conjumaster-v14";
+const CACHE = "conjumaster-v15";
 const ASSETS = [
-  "./", "./index.html", "./styles.css", "./app.js", "./data.js",
-  "./favicon.svg", "./manifest.json", "./icon-192.png", "./icon-512.png",
+  "./", "./index.html", "./styles.css", "./app.js", "./data/data.js",
+  "./assets/favicon.svg", "./manifest.json", "./assets/icon-192.png", "./assets/icon-512.png",
 ];
 
 self.addEventListener("install", (e) => {

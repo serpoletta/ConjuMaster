@@ -8,8 +8,9 @@
 """
 import io, json, re
 
-SRC = "top245verbsfr.txt"
-DST = "data.js"
+# Запускать из корня репозитория: python3 tools/parse_verbs.py
+SRC = "data/top245verbsfr.txt"
+DST = "data/data.js"
 
 PRON_KEYS = ["je", "tu", "il", "elle", "on", "nous", "vous", "ils", "elles"]
 
@@ -72,7 +73,7 @@ def main():
     total_forms = sum(len(v["forms"]) for v in verbs)
     payload = json.dumps(verbs, ensure_ascii=False)
     js = ("// Авто-сгенерировано из top245verbsfr.txt — не редактировать вручную.\n"
-          "// Перегенерировать: python3 parse_verbs.py (исходник — SRC в начале файла)\n"
+          "// Перегенерировать из корня: python3 tools/parse_verbs.py\n"
           "const VERBS = %s;\n" % payload)
     io.open(DST, encoding="utf-8", mode="w").write(js)
     print("verbs: %d" % len(verbs))

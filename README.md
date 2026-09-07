@@ -62,23 +62,25 @@ python3 -m http.server 8000
 иконки, `sw.js` (офлайн-кэш).
 
 ```
-index.html          разметка и экраны (главная / тренировка / итог)
+index.html          разметка и экраны (главная / тренировка / итог / справка)
 styles.css          светлая зелено-голубая тема, адаптив
 app.js              карточки, SRS-алгоритм, статистика, календарь, localStorage
-data.js             сгенерированные данные (не редактировать вручную)
-top245verbsfr.txt   исходник данных: глаголы, спряжения, переводы
-parse_verbs.py      генератор data.js из txt
+sw.js               офлайн-кэш для PWA (при правках подними CACHE!)
+manifest.json       PWA-манифест
+assets/             favicon.svg и PNG-иконки
+data/               top245verbsfr.txt — исходник + data.js (сгенерировано)
+tools/              parse_verbs.py и gen_icons.py — генераторы
 ```
 
 ## 📚 Данные
 
-Исходник — `top245verbsfr.txt` (формат: `инфинитив — перевод`, далее
+Исходник — `data/top245verbsfr.txt` (формат: `инфинитив — перевод`, далее
 `форма — перевод` для каждого местоимения). Спряжения сверены с Le Conjugueur
 (leconjugueur.lefigaro.fr).
-Пересборка после правок txt:
+Пересборка после правок txt (из корня репозитория):
 
 ```powershell
-python3 parse_verbs.py
+python3 tools/parse_verbs.py
 ```
 
 Id карточек привязаны к инфинитивам (`faire:tu`), а не к номерам строк,

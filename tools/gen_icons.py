@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Генерирует PWA-иконки ConjuMaster: icon-192.png, icon-512.png, apple-touch-icon.png (180)."""
+# Запускать из корня репозитория: python3 tools/gen_icons.py
+"""Генерирует PWA-иконки ConjuMaster в assets/: icon-192.png, icon-512.png, apple-touch-icon.png (180)."""
 from PIL import Image, ImageDraw, ImageFont
 import os
 
@@ -50,11 +51,11 @@ def draw_art(img):
     return img
 
 big = draw_art(rounded_gradient(512))
-big.save('icon-512.png')
-big.resize((192, 192), Image.LANCZOS).save('icon-192.png')
+big.save('assets/icon-512.png')
+big.resize((192, 192), Image.LANCZOS).save('assets/icon-192.png')
 # apple-touch-icon: без прозрачности, на случай старых iOS
 bg = Image.new('RGB', (180, 180), (16, 185, 129))
-bg.paste(draw_art(rounded_gradient(512)).resize((180, 180), Image.LANCZOS), (0, 0),
-         draw_art(rounded_gradient(512)).resize((180, 180), Image.LANCZOS))
-bg.save('apple-touch-icon.png')
+fg = draw_art(rounded_gradient(512)).resize((180, 180), Image.LANCZOS)
+bg.paste(fg, (0, 0), fg)
+bg.save('assets/apple-touch-icon.png')
 print('icons written')
