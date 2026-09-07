@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ConjuMaster — спряжение французских глаголов</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#10b981">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -150,5 +152,11 @@
 
 <script src="data.js"></script>
 <script src="app.js"></script>
+<script>
+// PWA: регистрируем service worker только на http(s), не на file://
+if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
 </body>
 </html>

@@ -20,6 +20,20 @@ python3 -m http.server 8000
 
 Никаких зависимостей и сборки нет — только `index.html` + `styles.css` + `app.js` + `data.js`.
 
+## Публикация (GitHub Pages + PWA)
+
+```powershell
+git push -u origin main
+```
+
+Затем в репозитории: Settings → Pages → Deploy from a branch → `main` / root.
+Приложение станет доступно как `https://USERNAME.github.io/ConjuMaster/`.
+
+PWA: `manifest.json` + иконки (`icon-192.png`, `icon-512.png`, `apple-touch-icon.png`)
+позволяют установить приложение на телефон («Добавить на главный экран»),
+`sw.js` даёт офлайн-режим. При изменении файлов приложения подними версию
+`CACHE` в `sw.js`, иначе телефоны будут отдавать старую закэшированную копию.
+
 ## Данные
 
 - `top245verbsfr.txt` — исходный файл: глаголы, спряжения в настоящем времени,

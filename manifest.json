@@ -1,0 +1,16 @@
+{
+  "name": "ConjuMaster — спряжение французских глаголов",
+  "short_name": "ConjuMaster",
+  "description": "Тренировка спряжения французских глаголов в настоящем времени с интервальными повторениями.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#e9f9f0",
+  "theme_color": "#10b981",
+  "lang": "ru",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
