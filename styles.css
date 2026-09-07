@@ -13,9 +13,10 @@ body{
   font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
   background:linear-gradient(135deg,var(--bg1),var(--bg2)) fixed;
   min-height:100vh;
+  overflow-x:hidden; overflow-x:clip; /* страховка от горизонтального распирания */
 }
 .topbar{
-  display:flex; justify-content:space-between; align-items:center; gap:12px;
+  display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;
   padding:14px 22px; background:rgba(255,255,255,.75); backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line); position:sticky; top:0; z-index:5;
 }
@@ -49,6 +50,7 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .hero{
   display:grid; grid-template-columns:1fr; gap:18px; margin-bottom:18px;
 }
+.hero > *{min-width:0} /* иначе широкий контент (календарь) распирает сетку */
 .hero-text{background:rgba(255,255,255,.85); border:1px solid var(--line); border-radius:var(--radius); padding:22px}
 .hero-text h2{margin:0 0 8px}
 .hero-text p{color:#33566a}
@@ -58,7 +60,7 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .cal-head{display:flex; justify-content:space-between; align-items:baseline; gap:10px; flex-wrap:wrap}
 .cal-head h3{margin:0}
 .cal-stats{display:flex; gap:14px; color:var(--muted); font-size:13.5px; font-weight:600}
-.cal-wrap{overflow-x:auto; padding-bottom:4px; margin-top:10px}
+.cal-wrap{overflow-x:auto; max-width:100%; padding-bottom:4px; margin-top:10px; -webkit-overflow-scrolling:touch}
 .cal-grid{--cell:13px; display:grid; grid-template-rows:repeat(7, var(--cell)); grid-auto-flow:column; grid-auto-columns:var(--cell); gap:3px; width:max-content}
 .cal-months{--cell:13px; display:grid; grid-auto-flow:column; grid-auto-columns:var(--cell); gap:3px; width:max-content; margin-bottom:5px; font-size:10.5px; color:var(--muted)}
 .cal-mlabel{overflow:hidden; white-space:nowrap}
@@ -137,11 +139,12 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 
 /* ===== Итог ===== */
 .done{text-align:center}
-.done-grid{display:flex; gap:12px; justify-content:center; margin:16px 0}
+.done-grid{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin:16px 0}
 .done-num{background:#f8fafc; border:1px solid var(--line); border-radius:16px; padding:14px 26px; display:grid}
 .done-num span{font-size:34px; font-weight:800}
 .done-num.good span{color:var(--good)} .done-num.mid span{color:var(--mid)} .done-num.bad span{color:var(--bad)}
 .mistake{display:flex; justify-content:space-between; gap:8px; background:#fef2f2; border:1px solid #fecaca; padding:8px 12px; border-radius:12px; margin:6px 0; font-size:14px}
+.mistake > *{min-width:0; overflow-wrap:anywhere}
 .mistake.ok{background:#f0fdf4; border-color:#bbf7d0}
 
 .footer{text-align:center; color:var(--muted); font-size:13px; padding:20px}
@@ -149,4 +152,16 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 @media (max-width:720px){
   .hero,.grid2{grid-template-columns:1fr}
   .card{min-height:340px}
+}
+@media (max-width:480px){
+  .wrap{padding:14px 10px 50px}
+  .topbar{padding:10px 12px}
+  .logo{width:38px; height:38px; font-size:20px; border-radius:12px}
+  h1{font-size:18px}
+  .subtitle{font-size:12px}
+  .hero-text,.panel,.hero-card{padding:14px}
+  .btn{padding:11px 14px; font-size:14px}
+  .search{min-width:0; width:100%}
+  .card{padding:56px 14px 24px}
+  .grade-btns .btn{flex:1 1 140px}
 }
