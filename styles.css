@@ -16,11 +16,14 @@ body{
   overflow-x:hidden; overflow-x:clip; /* страховка от горизонтального распирания */
 }
 .topbar{
-  display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;
+  display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:nowrap;
   padding:14px 22px; background:rgba(255,255,255,.75); backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line); position:sticky; top:0; z-index:5;
 }
-.brand{display:flex; gap:12px; align-items:center}
+.brand{display:flex; gap:12px; align-items:center; min-width:0; max-width:50%}
+.brand > div{min-width:0; overflow:hidden}
+.brand h1,.subtitle{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.top-actions{margin-left:auto; flex-shrink:0; display:flex; gap:8px; align-items:center}
 .logo{
   width:46px; height:46px; border-radius:14px; display:grid; place-items:center; font-size:24px;
   background:linear-gradient(135deg,var(--green),var(--blue)); box-shadow:0 4px 14px rgba(16,185,129,.35);
@@ -60,7 +63,11 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .cal-head{display:flex; justify-content:space-between; align-items:baseline; gap:10px; flex-wrap:wrap}
 .cal-head h3{margin:0}
 .cal-stats{display:flex; gap:14px; color:var(--muted); font-size:13.5px; font-weight:600}
-.cal-wrap{overflow-x:auto; max-width:100%; padding-bottom:4px; margin-top:10px; -webkit-overflow-scrolling:touch}
+.cal-wrap{overflow-x:auto; max-width:100%; padding-bottom:8px; margin-top:10px; -webkit-overflow-scrolling:touch; scrollbar-width:thin; scrollbar-color:var(--green) #eef4f2}
+.cal-wrap::-webkit-scrollbar{height:8px}
+.cal-wrap::-webkit-scrollbar-track{background:#eef4f2; border-radius:99px}
+.cal-wrap::-webkit-scrollbar-thumb{background:linear-gradient(90deg,var(--green),var(--blue)); border-radius:99px}
+.cal-wrap::-webkit-scrollbar-thumb:hover{filter:brightness(.93)}
 .cal-grid{--cell:13px; display:grid; grid-template-rows:repeat(7, var(--cell)); grid-auto-flow:column; grid-auto-columns:var(--cell); gap:3px; width:max-content}
 .cal-months{--cell:13px; display:grid; grid-auto-flow:column; grid-auto-columns:var(--cell); gap:3px; width:max-content; margin-bottom:5px; font-size:10.5px; color:var(--muted)}
 .cal-mlabel{overflow:hidden; white-space:nowrap}
@@ -155,10 +162,12 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 }
 @media (max-width:480px){
   .wrap{padding:14px 10px 50px}
-  .topbar{padding:10px 12px}
+  .topbar{padding:10px 12px; gap:8px}
   .logo{width:38px; height:38px; font-size:20px; border-radius:12px}
   h1{font-size:18px}
-  .subtitle{font-size:12px}
+  .subtitle{display:none}
+  .top-actions{flex-wrap:wrap; justify-content:flex-end}
+  .pill{padding:5px 11px; font-size:12px}
   .hero-text,.panel,.hero-card{padding:14px}
   .btn{padding:11px 14px; font-size:14px}
   .search{min-width:0; width:100%}
