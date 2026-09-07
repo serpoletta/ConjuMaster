@@ -452,7 +452,11 @@ $("card").addEventListener("click", (e) => {
   if (e.target.closest(".grade-btns") || e.target.closest("#hintBtn")) return;
   flip();
 });
-$("card").addEventListener("keydown", (e) => {
+// Горячие клавиши — на уровне документа, чтобы работали без клика по карточке
+document.addEventListener("keydown", (e) => {
+  if ($("viewTrain").hidden) return; // только на экране тренировки
+  const tag = (document.activeElement && document.activeElement.tagName) || "";
+  if (/^(INPUT|TEXTAREA|SELECT)$/.test(tag)) return; // не мешаем вводу текста
   if (e.key === " " || e.key === "Enter") { e.preventDefault(); flip(); }
   if (!flipped) return;
   if (e.key === "1") grade("bad");
