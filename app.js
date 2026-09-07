@@ -207,6 +207,13 @@ function flip() {
   document.querySelector(".face-back").hidden = false;
 }
 
+function unflip() {
+  if (!flipped) return;
+  flipped = false;
+  document.querySelector(".face-front").hidden = false;
+  document.querySelector(".face-back").hidden = true;
+}
+
 function grade(g) {
   if (!flipped) return;
   const c = queue[pos];
@@ -454,10 +461,15 @@ $("card").addEventListener("click", (e) => {
 });
 // Горячие клавиши — на уровне документа, чтобы работали без клика по карточке
 document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") { // Esc — вернуться на главную (из тренировки или итогов)
+    if (!$("viewTrain").hidden || !$("viewDone").hidden) goHome();
+    return;
+  }
   if ($("viewTrain").hidden) return; // только на экране тренировки
   const tag = (document.activeElement && document.activeElement.tagName) || "";
   if (/^(INPUT|TEXTAREA|SELECT)$/.test(tag)) return; // не мешаем вводу текста
-  if (e.key === " " || e.key === "Enter") { e.preventDefault(); flip(); }
+  if (e.key === " ") { e.preventDefault(); flipped ? unflip() : flip(); } // пробел — туда-обратно
+  else if (e.key === "Enter") { e.preventDefault(); flip(); }
   if (!flipped) return;
   if (e.key === "1") grade("bad");
   if (e.key === "2") grade("mid");
