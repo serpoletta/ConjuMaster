@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConjuMaster — спряжение французских глаголов</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#10b981">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">🇫🇷</div>
+    <div>
+      <h1>ConjuMaster</h1>
+      <p class="subtitle">Настоящее время · карточки · интервальные повторения</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill" id="sessionPill" title="Номер текущей сессии">Сессия 0</span>
+    <button class="btn btn-ghost" id="btnHome" hidden>← Главная</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ ГЛАВНАЯ ============ -->
+  <section id="viewHome">
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Тренируй спряжение без зубрёжки</h2>
+        <p>10 случайных форм за тренировку. Вспомни французский вариант по русской фразе,
+           переверни карточку и честно оцени себя — умный алгоритм вернёт трудное раньше, а выученное — позже.</p>
+        <div class="hero-btns">
+          <button class="btn btn-primary" id="btnStart">▶ Начать тренировку · 10</button>
+          <button class="btn btn-soft" id="btnReviewHard">🔥 Только трудные</button>
+        </div>
+        <p class="hint-line">Прогресс хранится в браузере (localStorage) — при следующем запуске продолжишь с того же места.</p>
+      </div>
+      <div class="hero-card">
+        <div class="cal-head">
+          <h3>📅 Активность за год</h3>
+          <div class="cal-stats"><span id="calTotal"></span><span id="calStreak"></span></div>
+        </div>
+        <div class="cal-wrap">
+          <div class="cal-months" id="calMonths"></div>
+          <div class="cal-grid" id="calGrid"></div>
+        </div>
+        <div class="cal-legend"><span>меньше</span><i class="cal-day l0"></i><i class="cal-day l1"></i><i class="cal-day l2"></i><i class="cal-day l3"></i><i class="cal-day l4"></i><span>больше</span></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="panel">
+        <h3>📊 Формы <span class="muted" id="formsTotal"></span></h3>
+        <div class="stat-row"><span class="dot dot-new"></span>Новые <b id="stNew">0</b></div>
+        <div class="bar"><i class="fill f-new" id="barNew"></i></div>
+        <div class="stat-row"><span class="dot dot-learning"></span>В изучении <b id="stLearning">0</b></div>
+        <div class="bar"><i class="fill f-learning" id="barLearning"></i></div>
+        <div class="stat-row"><span class="dot dot-learned"></span>Выучено <b id="stLearned">0</b></div>
+        <div class="bar"><i class="fill f-learned" id="barLearned"></i></div>
+        <div class="stat-row"><span class="dot dot-hard"></span>Трудные <span class="muted-small">(≥3 ошибок)</span> <b id="stHard">0</b></div>
+        <div class="bar"><i class="fill f-hard" id="barHard"></i></div>
+        <p class="legend">Выучена = 3 верных ответа подряд. Трудная = 3+ ошибок всего (лечится тремя верными подряд).</p>
+      </div>
+      <div class="panel">
+        <h3>📚 Глаголы <span class="muted" id="verbsTotal"></span></h3>
+        <div class="stat-row">🆕 Новые <b id="vNew">0</b></div>
+        <div class="bar"><i class="fill f-new" id="vbarNew"></i></div>
+        <div class="stat-row">📖 В изучении <b id="vLearning">0</b></div>
+        <div class="bar"><i class="fill f-learning" id="vbarLearning"></i></div>
+        <div class="stat-row">✅ Выучены <span class="muted-small">(все формы)</span> <b id="vLearned">0</b></div>
+        <div class="bar"><i class="fill f-learned" id="vbarLearned"></i></div>
+        <div class="stat-row">🔥 Со сложными формами <b id="vHard">0</b></div>
+        <div class="bar"><i class="fill f-hard" id="vbarHard"></i></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="verbs-head">
+        <h3>📖 Все глаголы</h3>
+        <input id="verbSearch" class="search" type="search" placeholder="Найти глагол… (aller, быть, parler)">
+      </div>
+      <div id="verbList" class="verb-list"></div>
+    </div>
+
+    <div class="panel danger-zone">
+      <h3>⚙️ Данные</h3>
+      <div class="row">
+        <button class="btn btn-soft" id="btnExport">⬇ Экспорт прогресса</button>
+        <label class="btn btn-soft" for="fileImport">⬆ Импорт прогресса</label>
+        <input type="file" id="fileImport" accept="application/json" hidden>
+        <button class="btn btn-danger" id="btnReset">🗑 Сбросить прогресс</button>
+      </div>
+      <p class="muted-small" id="storageInfo">💾 Сохранённый прогресс: пока пусто.</p>
+      <p class="muted-small">Источник спряжений: Le Conjugueur (leconjugueur.lefigaro.fr), сверено с настоящим временем (Indicatif présent). Файл данных: <code>top245verbsfr.txt</code>.</p>
+    </div>
+  </section>
+
+  <!-- ============ ТРЕНИРОВКА ============ -->
+  <section id="viewTrain" hidden>
+    <div class="train-top">
+      <div class="progress"><i id="trainBar"></i></div>
+      <div class="train-meta"><span id="trainPos">1 / 10</span><span id="trainMode" class="pill pill-soft"></span></div>
+    </div>
+
+    <div class="card" id="card" role="button" tabindex="0" aria-label="Карточка: нажми, чтобы проверить ответ">
+      <button class="hint-btn" id="hintBtn" title="Подсказка: показать инфинитив">?</button>
+      <div class="hint-pop" id="hintPop" hidden></div>
+      <div class="face face-front">
+        <div class="face-label">Переведи на французский</div>
+        <div class="ru-big" id="cardRu">…</div>
+        <div class="tap-tip">👆 нажми на карточку, чтобы проверить</div>
+      </div>
+      <div class="face face-back" hidden>
+        <div class="face-label">Правильный ответ</div>
+        <div class="fr-big" id="cardFr">…</div>
+        <div class="ru-small" id="cardRuSmall">…</div>
+        <div class="grade-btns">
+          <button class="btn btn-bad" data-grade="bad">❌ Неверно <kbd>1</kbd></button>
+          <button class="btn btn-mid" data-grade="mid">🤔 Неуверенно <kbd>2</kbd></button>
+          <button class="btn btn-good" data-grade="good">✅ Верно <kbd>3</kbd></button>
+        </div>
+      </div>
+    </div>
+    <p class="requeue-note" id="requeueNote" hidden>↩ Эта форма вернётся ещё раз в конце тренировки</p>
+  </section>
+
+  <!-- ============ ИТОГ ============ -->
+  <section id="viewDone" hidden>
+    <div class="panel done">
+      <h3>🏁 Тренировка завершена!</h3>
+      <div class="done-grid">
+        <div class="done-num good"><span id="dGood">0</span><small>верно</small></div>
+        <div class="done-num mid"><span id="dMid">0</span><small>неуверенно</small></div>
+        <div class="done-num bad"><span id="dBad">0</span><small>неверно</small></div>
+      </div>
+      <div id="doneMistakes"></div>
+      <div class="row">
+        <button class="btn btn-primary" id="btnAgain">▶ Ещё 10</button>
+        <button class="btn btn-soft" id="btnToHome">📊 К статистике</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">ConjuMaster · présent de l'indicatif · <span id="footCount"></span></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

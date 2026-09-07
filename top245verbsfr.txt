@@ -1,0 +1,2670 @@
+être — быть, существовать, находиться
+je suis — я есть / я нахожусь
+tu es — ты есть
+il est — он есть
+elle est — она есть
+on est — мы (неформ.) есть / один есть
+nous sommes — мы есть
+vous êtes — вы есть
+ils sont — они (м.) есть
+elles sont — они (ж.) есть
+
+avoir — иметь
+j'ai — я имею
+tu as — ты имеешь
+il a — он имеет
+elle a — она имеет
+on a — мы (неформ.) имеем
+nous avons — мы имеем
+vous avez — вы имеете
+ils ont — они (м.) имеют
+elles ont — они (ж.) имеют
+
+aller — идти, ехать
+je vais — я иду / я еду
+tu vas — ты идёшь
+il va — он идёт
+elle va — она идёт
+on va — мы (неформ.) идём
+nous allons — мы идём
+vous allez — вы идёте
+ils vont — они (м.) идут
+elles vont — они (ж.) идут
+
+faire — делать
+je fais — я делаю
+tu fais — ты делаешь
+il fait — он делает
+elle fait — она делает
+on fait — мы (неформ.) делаем
+nous faisons — мы делаем
+vous faites — вы делаете
+ils font — они (м.) делают
+elles font — они (ж.) делают
+
+dire — говорить, сказать
+je dis — я говорю
+tu dis — ты говоришь
+il dit — он говорит
+elle dit — она говорит
+on dit — мы (неформ.) говорим
+nous disons — мы говорим
+vous dites — вы говорите
+ils disent — они (м.) говорят
+elles disent — они (ж.) говорят
+
+pouvoir — мочь, быть в состоянии
+je peux — я могу
+tu peux — ты можешь
+il peut — он может
+elle peut — она может
+on peut — мы (неформ.) можем
+nous pouvons — мы можем
+vous pouvez — вы можете
+ils peuvent — они (м.) могут
+elles peuvent — они (ж.) могут
+
+vouloir — хотеть, желать
+je veux — я хочу
+tu veux — ты хочешь
+il veut — он хочет
+elle veut — она хочет
+on veut — мы (неформ.) хотим
+nous voulons — мы хотим
+vous voulez — вы хотите
+ils veulent — они (м.) хотят
+elles veulent — они (ж.) хотят
+
+savoir — знать, уметь
+je sais — я знаю / я умею
+tu sais — ты знаешь
+il sait — он знает
+elle sait — она знает
+on sait — мы (неформ.) знаем
+nous savons — мы знаем
+vous savez — вы знаете
+ils savent — они (м.) знают
+elles savent — они (ж.) знают
+
+voir — видеть, смотреть
+je vois — я вижу
+tu vois — ты видишь
+il voit — он видит
+elle voit — она видит
+on voit — мы (неформ.) видим
+nous voyons — мы видим
+vous voyez — вы видите
+ils voient — они (м.) видят
+elles voient — они (ж.) видят
+
+devoir — быть должным, долженствовать
+je dois — я должен
+tu dois — ты должен
+il doit — он должен
+elle doit — она должна
+on doit — мы (неформ.) должны
+nous devons — мы должны
+vous devez — вы должны
+ils doivent — они (м.) должны
+elles doivent — они (ж.) должны
+
+venir — приходить, приезжать
+je viens — я прихожу / я приезжаю
+tu viens — ты приходишь
+il vient — он приходит
+elle vient — она приходит
+on vient — мы (неформ.) приходим
+nous venons — мы приходим
+vous venez — вы приходите
+ils viennent — они (м.) приходят
+elles viennent — они (ж.) приходят
+
+suivre — следовать, идти за
+je suis — я следую
+tu suis — ты следуешь
+il suit — он следует
+elle suit — она следует
+on suit — мы (неформ.) следуем
+nous suivons — мы следуем
+vous suivez — вы следуете
+ils suivent — они (м.) следуют
+elles suivent — они (ж.) следуют
+
+parler — говорить, разговаривать
+je parle — я говорю
+tu parles — ты говоришь
+il parle — он говорит
+elle parle — она говорит
+on parle — мы (неформ.) говорим
+nous parlons — мы говорим
+vous parlez — вы говорите
+ils parlent — они (м.) говорят
+elles parlent — они (ж.) говорят
+
+prendre — брать, взять
+je prends — я беру
+tu prends — ты берёшь
+il prend — он берёт
+elle prend — она берёт
+on prend — мы (неформ.) берём
+nous prenons — мы берём
+vous prenez — вы берёте
+ils prennent — они (м.) берут
+elles prennent — они (ж.) берут
+
+croire — считать, думать, полагать
+je crois — я считаю / я думаю
+tu crois — ты считаешь
+il croit — он считает
+elle croit — она считает
+on croit — мы (неформ.) считаем
+nous croyons — мы считаем
+vous croyez — вы считаете
+ils croient — они (м.) считают
+elles croient — они (ж.) считают
+
+mettre — класть, ставить, надевать
+je mets — я кладу / я ставлю
+tu mets — ты кладёшь
+il met — он кладёт
+elle met — она кладёт
+on met — мы (неформ.) кладём
+nous mettons — мы кладём
+vous mettez — вы кладёте
+ils mettent — они (м.) кладут
+elles mettent — они (ж.) кладут
+
+écrire — писать
+j'écris — я пишу
+tu écris — ты пишешь
+il écrit — он пишет
+elle écrit — она пишет
+on écrit — мы (неформ.) пишем
+nous écrivons — мы пишем
+vous écrivez — вы пишете
+ils écrivent — они (м.) пишут
+elles écrivent — они (ж.) пишут
+
+lire — читать
+je lis — я читаю
+tu lis — ты читаешь
+il lit — он читает
+elle lit — она читает
+on lit — мы (неформ.) читаем
+nous lisons — мы читаем
+vous lisez — вы читаете
+ils lisent — они (м.) читают
+elles lisent — они (ж.) читают
+
+répondre — отвечать
+je réponds — я отвечаю
+tu réponds — ты отвечаешь
+il répond — он отвечает
+elle répond — она отвечает
+on répond — мы (неформ.) отвечаем
+nous répondons — мы отвечаем
+vous répondez — вы отвечаете
+ils répondent — они (м.) отвечают
+elles répondent — они (ж.) отвечают
+
+attendre — ждать
+j'attends — я жду
+tu attends — ты ждёшь
+il attend — он ждёт
+elle attend — она ждёт
+on attend — мы (неформ.) ждём
+nous attendons — мы ждём
+vous attendez — вы ждёте
+ils attendent — они (м.) ждут
+elles attendent — они (ж.) ждут
+
+partir — уезжать, уходить
+je pars — я уезжаю / я ухожу
+tu pars — ты уезжаешь
+il part — он уезжает
+elle part — она уезжает
+on part — мы (неформ.) уезжаем
+nous partons — мы уезжаем
+vous partez — вы уезжаете
+ils partent — они (м.) уезжают
+elles partent — они (ж.) уезжают
+
+sortir — выходить
+je sors — я выхожу
+tu sors — ты выходишь
+il sort — он выходит
+elle sort — она выходит
+on sort — мы (неформ.) выходим
+nous sortons — мы выходим
+vous sortez — вы выходите
+ils sortent — они (м.) выходят
+elles sortent — они (ж.) выходят
+
+dormir — спать
+je dors — я сплю
+tu dors — ты спишь
+il dort — он спит
+elle dort — она спит
+on dort — мы (неформ.) спим
+nous dormons — мы спим
+vous dormez — вы спите
+ils dorment — они (м.) спят
+elles dorment — они (ж.) спят
+
+servir — служить, подавать
+je sers — я служу / я подаю
+tu sers — ты служишь
+il sert — он служит
+elle sert — она служит
+on sert — мы (неформ.) служим
+nous servons — мы служим
+vous servez — вы служите
+ils servent — они (м.) служат
+elles servent — они (ж.) служат
+
+sentir — чувствовать, пахнуть
+je sens — я чувствую
+tu sens — ты чувствуешь
+il sent — он чувствует
+elle sent — она чувствует
+on sent — мы (неформ.) чувствуем
+nous sentons — мы чувствуем
+vous sentez — вы чувствуете
+ils sentent — они (м.) чувствуют
+elles sentent — они (ж.) чувствуют
+
+connaître — знать, быть знакомым
+je connais — я знаю / я знаком
+tu connais — ты знаешь
+il connaît — он знает
+elle connaît — она знает
+on connaît — мы (неформ.) знаем
+nous connaissons — мы знаем
+vous connaissez — вы знаете
+ils connaissent — они (м.) знают
+elles connaissent — они (ж.) знают
+
+reconnaître — узнавать, признавать
+je reconnais — я узнаю
+tu reconnais — ты узнаёшь
+il reconnaît — он узнаёт
+elle reconnaît — она узнаёт
+on reconnaît — мы (неформ.) узнаём
+nous reconnaissons — мы узнаём
+vous reconnaissez — вы узнаёте
+ils reconnaissent — они (м.) узнают
+elles reconnaissent — они (ж.) узнают
+
+paraître — казаться, появляться
+je parais — я кажусь / я появляюсь
+tu parais — ты кажешься
+il paraît — он кажется
+elle paraît — она кажется
+on paraît — мы (неформ.) кажемся
+nous paraissons — мы кажемся
+vous paraissez — вы кажетесь
+ils paraissent — они (м.) кажутся
+elles paraissent — они (ж.) кажутся
+
+traduire — переводить
+je traduis — я перевожу
+tu traduis — ты переводишь
+il traduit — он переводит
+elle traduit — она переводит
+on traduit — мы (неформ.) переводим
+nous traduisons — мы переводим
+vous traduisez — вы переводите
+ils traduisent — они (м.) переводят
+elles traduisent — они (ж.) переводят
+
+conduire — вести, управлять
+je conduis — я веду / я управляю
+tu conduis — ты ведёшь
+il conduit — он ведёт
+elle conduit — она ведёт
+on conduit — мы (неформ.) ведём
+nous conduisons — мы ведём
+vous conduisez — вы ведёте
+ils conduisent — они (м.) ведут
+elles conduisent — они (ж.) ведут
+
+produire — производить
+je produis — я произвожу
+tu produis — ты производишь
+il produit — он производит
+elle produit — она производит
+on produit — мы (неформ.) производим
+nous produisons — мы производим
+vous produisez — вы производите
+ils produisent — они (м.) производят
+elles produisent — они (ж.) производят
+
+ouvrir — открывать
+j'ouvre — я открываю
+tu ouvres — ты открываешь
+il ouvre — он открывает
+elle ouvre — она открывает
+on ouvre — мы (неформ.) открываем
+nous ouvrons — мы открываем
+vous ouvrez — вы открываете
+ils ouvrent — они (м.) открывают
+elles ouvrent — они (ж.) открывают
+
+couvrir — покрывать
+je couvre — я покрываю
+tu couvres — ты покрываешь
+il couvre — он покрывает
+elle couvre — она покрывает
+on couvre — мы (неформ.) покрываем
+nous couvrons — мы покрываем
+vous couvrez — вы покрываете
+ils couvrent — они (м.) покрывают
+elles couvrent — они (ж.) покрывают
+
+offrir — предлагать, дарить
+j'offre — я предлагаю / я дарю
+tu offres — ты предлагаешь
+il offre — он предлагает
+elle offre — она предлагает
+on offre — мы (неформ.) предлагаем
+nous offrons — мы предлагаем
+vous offrez — вы предлагаете
+ils offrent — они (м.) предлагают
+elles offrent — они (ж.) предлагают
+
+souffrir — страдать, терпеть
+je souffre — я страдаю
+tu souffres — ты страдаешь
+il souffre — он страдает
+elle souffre — она страдает
+on souffre — мы (неформ.) страдаем
+nous souffrons — мы страдаем
+vous souffrez — вы страдаете
+ils souffrent — они (м.) страдают
+elles souffrent — они (ж.) страдают
+
+finir — заканчивать
+je finis — я заканчиваю
+tu finis — ты заканчиваешь
+il finit — он заканчивает
+elle finit — она заканчивает
+on finit — мы (неформ.) заканчиваем
+nous finissons — мы заканчиваем
+vous finissez — вы заканчиваете
+ils finissent — они (м.) заканчивают
+elles finissent — они (ж.) заканчивают
+
+choisir — выбирать
+je choisis — я выбираю
+tu choisis — ты выбираешь
+il choisit — он выбирает
+elle choisit — она выбирает
+on choisit — мы (неформ.) выбираем
+nous choisissons — мы выбираем
+vous choisissez — вы выбираете
+ils choisissent — они (м.) выбирают
+elles choisissent — они (ж.) выбирают
+
+réussir — преуспевать, удаваться
+je réussis — я преуспеваю / у меня получается
+tu réussis — ты преуспеваешь
+il réussit — он преуспевает
+elle réussit — она преуспевает
+on réussit — мы (неформ.) преуспеваем
+nous réussissons — мы преуспеваем
+vous réussissez — вы преуспеваете
+ils réussissent — они (м.) преуспевают
+elles réussissent — они (ж.) преуспевают
+
+obéir — повиноваться, слушаться
+j'obéis — я повинуюсь
+tu obéis — ты повинуешься
+il obéit — он повинуется
+elle obéit — она повинуется
+on obéit — мы (неформ.) повинуемся
+nous obéissons — мы повинуемся
+vous obéissez — вы повинуетесь
+ils obéissent — они (м.) повинуются
+elles obéissent — они (ж.) повинуются
+
+réfléchir — размышлять
+je réfléchis — я размышляю
+tu réfléchis — ты размышляешь
+il réfléchit — он размышляет
+elle réfléchit — она размышляет
+on réfléchit — мы (неформ.) размышляем
+nous réfléchissons — мы размышляем
+vous réfléchissez — вы размышляете
+ils réfléchissent — они (м.) размышляют
+elles réfléchissent — они (ж.) размышляют
+
+agir — действовать
+j'agis — я действую
+tu agis — ты действуешь
+il agit — он действует
+elle agit — она действует
+on agit — мы (неформ.) действуем
+nous agissons — мы действуем
+vous agissez — вы действуете
+ils agissent — они (м.) действуют
+elles agissent — они (ж.) действуют
+
+bâtir — строить
+je bâtis — я строю
+tu bâtis — ты строишь
+il bâtit — он строит
+elle bâtit — она строит
+on bâtit — мы (неформ.) строим
+nous bâtissons — мы строим
+vous bâtissez — вы строите
+ils bâtissent — они (м.) строят
+elles bâtissent — они (ж.) строят
+
+remplir — наполнять
+je remplis — я наполняю
+tu remplis — ты наполняешь
+il remplit — он наполняет
+elle remplit — она наполняет
+on remplit — мы (неформ.) наполняем
+nous remplissons — мы наполняем
+vous remplissez — вы наполняете
+ils remplissent — они (м.) наполняют
+elles remplissent — они (ж.) наполняют
+
+punir — наказывать
+je punis — я наказываю
+tu punis — ты наказываешь
+il punit — он наказывает
+elle punit — она наказывает
+on punit — мы (неформ.) наказываем
+nous punissons — мы наказываем
+vous punissez — вы наказываете
+ils punissent — они (м.) наказывают
+elles punissent — они (ж.) наказывают
+
+grandir — расти
+je grandis — я расту
+tu grandis — ты растёшь
+il grandit — он растёт
+elle grandit — она растёт
+on grandit — мы (неформ.) растём
+nous grandissons — мы растём
+vous grandissez — вы растёте
+ils grandissent — они (м.) растут
+elles grandissent — они (ж.) растут
+
+vieillir — стареть
+je vieillis — я старею
+tu vieillis — ты стареешь
+il vieillit — он стареет
+elle vieillit — она стареет
+on vieillit — мы (неформ.) стареем
+nous vieillissons — мы стареем
+vous vieillissez — вы стареете
+ils vieillissent — они (м.) стареют
+elles vieillissent — они (ж.) стареют
+
+nourrir — кормить, питать
+je nourris — я кормлю
+tu nourris — ты кормишь
+il nourrit — он кормит
+elle nourrit — она кормит
+on nourrit — мы (неформ.) кормим
+nous nourrissons — мы кормим
+vous nourrissez — вы кормите
+ils nourrissent — они (м.) кормят
+elles nourrissent — они (ж.) кормят
+
+réunir — собирать, объединять
+je réunis — я собираю / я объединяю
+tu réunis — ты собираешь
+il réunit — он собирает
+elle réunit — она собирает
+on réunit — мы (неформ.) собираем
+nous réunissons — мы собираем
+vous réunissez — вы собираете
+ils réunissent — они (м.) собирают
+elles réunissent — они (ж.) собирают
+
+applaudir — аплодировать
+j'applaudis — я аплодирую
+tu applaudis — ты аплодируешь
+il applaudit — он аплодирует
+elle applaudit — она аплодирует
+on applaudit — мы (неформ.) аплодируем
+nous applaudissons — мы аплодируем
+vous applaudissez — вы аплодируете
+ils applaudissent — они (м.) аплодируют
+elles applaudissent — они (ж.) аплодируют
+
+donner — давать
+je donne — я даю
+tu donnes — ты даёшь
+il donne — он даёт
+elle donne — она даёт
+on donne — мы (неформ.) даём
+nous donnons — мы даём
+vous donnez — вы даёте
+ils donnent — они (м.) дают
+elles donnent — они (ж.) дают
+
+demander — спрашивать, просить
+je demande — я спрашиваю / я прошу
+tu demandes — ты спрашиваешь
+il demande — он спрашивает
+elle demande — она спрашивает
+on demande — мы (неформ.) спрашиваем
+nous demandons — мы спрашиваем
+vous demandez — вы спрашиваете
+ils demandent — они (м.) спрашивают
+elles demandent — они (ж.) спрашивают
+
+regarder — смотреть
+je regarde — я смотрю
+tu regardes — ты смотришь
+il regarde — он смотрит
+elle regarde — она смотрит
+on regarde — мы (неформ.) смотрим
+nous regardons — мы смотрим
+vous regardez — вы смотрите
+ils regardent — они (м.) смотрят
+elles regardent — они (ж.) смотрят
+
+écouter — слушать
+j'écoute — я слушаю
+tu écoutes — ты слушаешь
+il écoute — он слушает
+elle écoute — она слушает
+on écoute — мы (неформ.) слушаем
+nous écoutons — мы слушаем
+vous écoutez — вы слушаете
+ils écoutent — они (м.) слушают
+elles écoutent — они (ж.) слушают
+
+montrer — показывать
+je montre — я показываю
+tu montres — ты показываешь
+il montre — он показывает
+elle montre — она показывает
+on montre — мы (неформ.) показываем
+nous montrons — мы показываем
+vous montrez — вы показываете
+ils montrent — они (м.) показывают
+elles montrent — они (ж.) показывают
+
+porter — носить, нести
+je porte — я ношу / я несу
+tu portes — ты носишь
+il porte — он носит
+elle porte — она носит
+on porte — мы (неформ.) носим
+nous portons — мы носим
+vous portez — вы носите
+ils portent — они (м.) носят
+elles portent — они (ж.) носят
+
+apporter — приносить
+j'apporte — я приношу
+tu apportes — ты приносишь
+il apporte — он приносит
+elle apporte — она приносит
+on apporte — мы (неформ.) приносим
+nous apportons — мы приносим
+vous apportez — вы приносите
+ils apportent — они (м.) приносят
+elles apportent — они (ж.) приносят
+
+emporter — уносить, брать с собой
+j'emporte — я уношу / я беру с собой
+tu emportes — ты уносишь
+il emporte — он уносит
+elle emporte — она уносит
+on emporte — мы (неформ.) уносим
+nous emportons — мы уносим
+vous emportez — вы уносите
+ils emportent — они (м.) уносят
+elles emportent — они (ж.) уносят
+
+trouver — находить
+je trouve — я нахожу
+tu trouves — ты находишь
+il trouve — он находит
+elle trouve — она находит
+on trouve — мы (неформ.) находим
+nous trouvons — мы находим
+vous trouvez — вы находите
+ils trouvent — они (м.) находят
+elles trouvent — они (ж.) находят
+
+chercher — искать
+je cherche — я ищу
+tu cherches — ты ищешь
+il cherche — он ищет
+elle cherche — она ищет
+on cherche — мы (неформ.) ищем
+nous cherchons — мы ищем
+vous cherchez — вы ищете
+ils cherchent — они (м.) ищут
+elles cherchent — они (ж.) ищут
+
+penser — думать
+je pense — я думаю
+tu penses — ты думаешь
+il pense — он думает
+elle pense — она думает
+on pense — мы (неформ.) думаем
+nous pensons — мы думаем
+vous pensez — вы думаете
+ils pensent — они (м.) думают
+elles pensent — они (ж.) думают
+
+travailler — работать
+je travaille — я работаю
+tu travailles — ты работаешь
+il travaille — он работает
+elle travaille — она работает
+on travaille — мы (неформ.) работаем
+nous travaillons — мы работаем
+vous travaillez — вы работаете
+ils travaillent — они (м.) работают
+elles travaillent — они (ж.) работают
+
+habiter — жить, проживать
+j'habite — я живу / я проживаю
+tu habites — ты живёшь
+il habite — он живёт
+elle habite — она живёт
+on habite — мы (неформ.) живём
+nous habitons — мы живём
+vous habitez — вы живёте
+ils habitent — они (м.) живут
+elles habitent — они (ж.) живут
+
+aimer — любить
+j'aime — я люблю
+tu aimes — ты любишь
+il aime — он любит
+elle aime — она любит
+on aime — мы (неформ.) любим
+nous aimons — мы любим
+vous aimez — вы любите
+ils aiment — они (м.) любят
+elles aiment — они (ж.) любят
+
+adorer — обожать, очень любить
+j'adore — я обожаю
+tu adores — ты обожаешь
+il adore — он обожает
+elle adore — она обожает
+on adore — мы (неформ.) обожаем
+nous adorons — мы обожаем
+vous adorez — вы обожаете
+ils adorent — они (м.) обожают
+elles adorent — они (ж.) обожают
+
+détester — ненавидеть
+je déteste — я ненавижу
+tu détestes — ты ненавидишь
+il déteste — он ненавидит
+elle déteste — она ненавидит
+on déteste — мы (неформ.) ненавидим
+nous détestons — мы ненавидим
+vous détestez — вы ненавидите
+ils détestent — они (м.) ненавидят
+elles détestent — они (ж.) ненавидят
+
+manger — есть, кушать
+je mange — я ем
+tu manges — ты ешь
+il mange — он ест
+elle mange — она ест
+on mange — мы (неформ.) едим
+nous mangeons — мы едим
+vous mangez — вы едите
+ils mangent — они (м.) едят
+elles mangent — они (ж.) едят
+
+boire — пить
+je bois — я пью
+tu bois — ты пьёшь
+il boit — он пьёт
+elle boit — она пьёт
+on boit — мы (неформ.) пьём
+nous buvons — мы пьём
+vous buvez — вы пьёте
+ils boivent — они (м.) пьют
+elles boivent — они (ж.) пьют
+
+vendre — продавать
+je vends — я продаю
+tu vends — ты продаёшь
+il vend — он продаёт
+elle vend — она продаёт
+on vend — мы (неформ.) продаём
+nous vendons — мы продаём
+vous vendez — вы продаёте
+ils vendent — они (м.) продают
+elles vendent — они (ж.) продают
+
+acheter — покупать
+j'achète — я покупаю
+tu achètes — ты покупаешь
+il achète — он покупает
+elle achète — она покупает
+on achète — мы (неформ.) покупаем
+nous achetons — мы покупаем
+vous achetez — вы покупаете
+ils achètent — они (м.) покупают
+elles achètent — они (ж.) покупают
+
+payer — платить
+je paie — я плачу
+tu paies — ты платишь
+il paie — он платит
+elle paie — она платит
+on paie — мы (неформ.) платим
+nous payons — мы платим
+vous payez — вы платите
+ils paient — они (м.) платят
+elles paient — они (ж.) платят
+
+employer — применять, использовать
+j'emploie — я применяю / я использую
+tu emploies — ты применяешь
+il emploie — он применяет
+elle emploie — она применяет
+on emploie — мы (неформ.) применяем
+nous employons — мы применяем
+vous employez — вы применяете
+ils emploient — они (м.) применяют
+elles emploient — они (ж.) применяют
+
+appeler — звать, называть
+j'appelle — я зову / я называю
+tu appelles — ты зовёшь
+il appelle — он зовёт
+elle appelle — она зовёт
+on appelle — мы (неформ.) зовём
+nous appelons — мы зовём
+vous appelez — вы зовёте
+ils appellent — они (м.) зовут
+elles appellent — они (ж.) зовут
+
+jeter — бросать
+je jette — я бросаю
+tu jettes — ты бросаешь
+il jette — он бросает
+elle jette — она бросает
+on jette — мы (неформ.) бросаем
+nous jetons — мы бросаем
+vous jetez — вы бросаете
+ils jettent — они (м.) бросают
+elles jettent — они (ж.) бросают
+
+lever — поднимать
+je lève — я поднимаю
+tu lèves — ты поднимаешь
+il lève — он поднимает
+elle lève — она поднимает
+on lève — мы (неформ.) поднимаем
+nous levons — мы поднимаем
+vous levez — вы поднимаете
+ils lèvent — они (м.) поднимают
+elles lèvent — они (ж.) поднимают
+
+se promener — гулять
+je me promène — я гуляю
+tu te promènes — ты гуляешь
+il se promène — он гуляет
+elle se promène — она гуляет
+on se promène — мы (неформ.) гуляем
+nous nous promenons — мы гуляем
+vous vous promenez — вы гуляете
+ils se promènent — они (м.) гуляют
+elles se promènent — они (ж.) гуляют
+
+s'asseoir — садиться
+je m'assieds — я сажусь
+tu t'assieds — ты садишься
+il s'assied — он садится
+elle s'assied — она садится
+on s'assied — мы (неформ.) садимся
+nous nous asseyons — мы садимся
+vous vous asseyez — вы садитесь
+ils s'asseyent — они (м.) садятся
+elles s'asseyent — elles (ж.) садятся
+
+se souvenir — помнить, вспоминать
+je me souviens — я помню / я вспоминаю
+tu te souviens — ты помнишь
+il se souvient — он помнит
+elle se souvient — она помнит
+on se souvient — мы (неформ.) помним
+nous nous souvenons — мы помним
+vous vous souvenez — вы помните
+ils se souviennent — они (м.) помнят
+elles se souviennent — они (ж.) помнят
+
+se taire — молчать
+je me tais — я молчу
+tu te tais — ты молчишь
+il se tait — он молчит
+elle se tait — она молчит
+on se tait — мы (неформ.) молчим
+nous nous taisons — мы молчим
+vous vous taisez — вы молчите
+ils se taisent — они (м.) молчат
+elles se taisent — elles (ж.) молчат
+
+passer — проходить, проводить время
+je passe — я прохожу / я провожу
+tu passes — ты проходишь
+il passe — он проходит
+elle passe — она проходит
+on passe — мы (неформ.) проходим
+nous passons — мы проходим
+vous passez — вы проходите
+ils passent — они (м.) проходят
+elles passent — они (ж.) проходят
+
+arriver — прибывать, случаться
+j'arrive — я прибываю / я приезжаю
+tu arrives — ты прибываешь
+il arrive — он прибывает
+elle arrive — она прибывает
+on arrive — мы (неформ.) прибываем
+nous arrivons — мы прибываем
+vous arrivez — вы прибываете
+ils arrivent — они (м.) прибывают
+elles arrivent — они (ж.) прибывают
+
+entrer — входить
+j'entre — я вхожу
+tu entres — ты входишь
+il entre — он входит
+elle entre — она входит
+on entre — мы (неформ.) входим
+nous entrons — мы входим
+vous entrez — вы входите
+ils entrent — они (м.) входят
+elles entrent — они (ж.) входят
+
+monter — подниматься
+je monte — я поднимаюсь
+tu montes — ты поднимаешься
+il monte — он поднимается
+elle monte — она поднимается
+on monte — мы (неформ.) поднимаемся
+nous montons — мы поднимаемся
+vous montez — вы поднимаетесь
+ils montent — они (м.) поднимаются
+elles montent — они (ж.) поднимаются
+
+descendre — спускаться
+je descends — я спускаюсь
+tu descends — ты спускаешься
+il descend — он спускается
+elle descend — она спускается
+on descend — мы (неформ.) спускаемся
+nous descendons — мы спускаемся
+vous descendez — вы спускаетесь
+ils descendent — они (м.) спускаются
+elles descendent — они (ж.) спускаются
+
+rester — оставаться
+je reste — я остаюсь
+tu restes — ты остаёшься
+il reste — он остаётся
+elle reste — она остаётся
+on reste — мы (неформ.) остаёмся
+nous restons — мы остаёмся
+vous restez — вы остаётесь
+ils restent — они (м.) остаются
+elles restent — они (ж.) остаются
+
+retourner — возвращаться
+je retourne — я возвращаюсь
+tu retournes — ты возвращаешься
+il retourne — он возвращается
+elle retourne — она возвращается
+on retourne — мы (неформ.) возвращаемся
+nous retournons — мы возвращаемся
+vous retournez — вы возвращаетесь
+ils retournent — они (м.) возвращаются
+elles retournent — они (ж.) возвращаются
+
+rentrer — возвращаться домой
+je rentre — я возвращаюсь домой
+tu rentres — ты возвращаешься домой
+il rentre — он возвращается домой
+elle rentre — она возвращается домой
+on rentre — мы (неформ.) возвращаемся домой
+nous rentrons — мы возвращаемся домой
+vous rentrez — вы возвращаетесь домой
+ils rentrent — они (м.) возвращаются домой
+elles rentrent — они (ж.) возвращаются домой
+
+tomber — падать
+je tombe — я падаю
+tu tombes — ты падаешь
+il tombe — он падает
+elle tombe — она падает
+on tombe — мы (неформ.) падаем
+nous tombons — мы падаем
+vous tombez — вы падаете
+ils tombent — они (м.) падают
+elles tombent — они (ж.) падают
+
+marcher — идти, ходить, работать
+je marche — я иду / я хожу
+tu marches — ты идёшь
+il marche — он идёт
+elle marche — она идёт
+on marche — мы (неформ.) идём
+nous marchons — мы идём
+vous marchez — вы идёте
+ils marchent — они (м.) идут
+elles marchent — они (ж.) идут
+
+courir — бежать
+je cours — я бегу
+tu cours — ты бежишь
+il court — он бежит
+elle court — она бежит
+on court — мы (неформ.) бежим
+nous courons — мы бежим
+vous courez — вы бежите
+ils courent — они (м.) бегут
+elles courent — они (ж.) бегут
+
+voyager — путешествовать
+je voyage — я путешествую
+tu voyages — ты путешествуешь
+il voyage — он путешествует
+elle voyage — она путешествует
+on voyage — мы (неформ.) путешествуем
+nous voyageons — мы путешествуем
+vous voyagez — вы путешествуете
+ils voyagent — они (м.) путешествуют
+elles voyagent — они (ж.) путешествуют
+
+chanter — петь
+je chante — я пою
+tu chantes — ты поёшь
+il chante — он поёт
+elle chante — она поёт
+on chante — мы (неформ.) поём
+nous chantons — мы поём
+vous chantez — вы поёте
+ils chantent — они (м.) поют
+elles chantent — они (ж.) поют
+
+danser — танцевать
+je danse — я танцую
+tu danses — ты танцуешь
+il danse — он танцует
+elle danse — она танцует
+on danse — мы (неформ.) танцуем
+nous dansons — мы танцуем
+vous dansez — вы танцуете
+ils dansent — они (м.) танцуют
+elles dansent — они (ж.) танцуют
+
+jouer — играть
+je joue — я играю
+tu joues — ты играешь
+il joue — он играет
+elle joue — она играет
+on joue — мы (неформ.) играем
+nous jouons — мы играем
+vous jouez — вы играете
+ils jouent — они (м.) играют
+elles jouent — они (ж.) играют
+
+gagner — выигрывать, зарабатывать
+je gagne — я выигрываю / я зарабатываю
+tu gagnes — ты выигрываешь
+il gagne — он выигрывает
+elle gagne — она выигрывает
+on gagne — мы (неформ.) выигрываем
+nous gagnons — мы выигрываем
+vous gagnez — вы выигрываете
+ils gagnent — они (м.) выигрывают
+elles gagnent — они (ж.) выигрывают
+
+perdre — терять, проигрывать
+je perds — я теряю / я проигрываю
+tu perds — ты теряешь
+il perd — он теряет
+elle perd — она теряет
+on perd — мы (неформ.) теряем
+nous perdons — мы теряем
+vous perdez — вы теряете
+ils perdent — они (м.) теряют
+elles perdent — они (ж.) теряют
+
+compter — считать, насчитывать
+je compte — я считаю
+tu comptes — ты считаешь
+il compte — он считает
+elle compte — она считает
+on compte — мы (неформ.) считаем
+nous comptons — мы считаем
+vous comptez — вы считаете
+ils comptent — они (м.) считают
+elles comptent — они (ж.) считают
+
+peser — весить, взвешивать
+je pèse — я вешу / я взвешиваю
+tu pèses — ты весишь
+il pèse — он весит
+elle pèse — она весит
+on pèse — мы (неформ.) весим
+nous pesons — мы весим
+vous pesez — вы весите
+ils pèsent — они (м.) весят
+elles pèsent — они (ж.) весят
+
+mesurer — измерять
+je mesure — я измеряю
+tu mesures — ты измеряешь
+il mesure — он измеряет
+elle mesure — она измеряет
+on mesure — мы (неформ.) измеряем
+nous mesurons — мы измеряем
+vous mesurez — вы измеряете
+ils mesurent — они (м.) измеряют
+elles mesurent — они (ж.) измеряют
+
+répéter — повторять
+je répète — я повторяю
+tu répètes — ты повторяешь
+il répète — он повторяет
+elle répète — она повторяет
+on répète — мы (неформ.) повторяем
+nous répétons — мы повторяем
+vous répétez — вы повторяете
+ils répètent — они (м.) повторяют
+elles répètent — они (ж.) повторяют
+
+essayer — пробовать, пытаться
+j'essaie — я пробую / я пытаюсь
+tu essaies — ты пробуешь
+il essaie — он пробует
+elle essaie — она пробует
+on essaie — мы (неформ.) пробуем
+nous essayons — мы пробуем
+vous essayez — вы пробуете
+ils essaient — они (м.) пробуют
+elles essaient — они (ж.) пробуют
+
+présenter — представлять, предъявлять
+je présente — я представляю
+tu présentes — ты представляешь
+il présente — он представляет
+elle présente — она представляет
+on présente — мы (неформ.) представляем
+nous présentons — мы представляем
+vous présentez — вы представляете
+ils présentent — они (м.) представляют
+elles présentent — они (ж.) представляют
+
+représenter — представлять, изображать
+je représente — я представляю / я изображаю
+tu représentes — ты представляешь
+il représente — он представляет
+elle représente — она представляет
+on représente — мы (неформ.) представляем
+nous représentons — мы представляем
+vous représentez — вы представляете
+ils représentent — они (м.) представляют
+elles représentent — они (ж.) представляют
+
+expliquer — объяснять
+j'explique — я объясняю
+tu expliques — ты объясняешь
+il explique — он объясняет
+elle explique — она объясняет
+on explique — мы (неформ.) объясняем
+nous expliquons — мы объясняем
+vous expliquez — вы объясняете
+ils expliquent — они (м.) объясняют
+elles expliquent — они (ж.) объясняют
+
+utiliser — использовать
+j'utilise — я использую
+tu utilises — ты используешь
+il utilise — он использует
+elle utilise — она использует
+on utilise — мы (неформ.) используем
+nous utilisons — мы используем
+vous utilisez — вы используете
+ils utilisent — они (м.) используют
+elles utilisent — они (ж.) используют
+
+terminer — заканчивать
+je termine — я заканчиваю
+tu termines — ты заканчиваешь
+il termine — он заканчивает
+elle termine — она заканчивает
+on termine — мы (неформ.) заканчиваем
+nous terminons — мы заканчиваем
+vous terminez — вы заканчиваете
+ils terminent — они (м.) заканчивают
+elles terminent — они (ж.) заканчивают
+
+continuer — продолжать
+je continue — я продолжаю
+tu continues — ты продолжаешь
+il continue — он продолжает
+elle continue — она продолжает
+on continue — мы (неформ.) продолжаем
+nous continuons — мы продолжаем
+vous continuez — вы продолжаете
+ils continuent — они (м.) продолжают
+elles continuent — они (ж.) продолжают
+
+commencer — начинать
+je commence — я начинаю
+tu commences — ты начинаешь
+il commence — он начинает
+elle commence — она начинает
+on commence — мы (неформ.) начинаем
+nous commençons — мы начинаем
+vous commencez — вы начинаете
+ils commencent — они (м.) начинают
+elles commencent — они (ж.) начинают
+
+changer — менять, изменять
+je change — я меняю
+tu changes — ты меняешь
+il change — он меняет
+elle change — она меняет
+on change — мы (неформ.) меняем
+nous changeons — мы меняем
+vous changez — вы меняете
+ils changent — они (м.) меняют
+elles changent — они (ж.) меняют
+
+garder — хранить, сохранять
+je garde — я храню
+tu gardes — ты хранишь
+il garde — он хранит
+elle garde — она хранит
+on garde — мы (неформ.) храним
+nous gardons — мы храним
+vous gardez — вы храните
+ils gardent — они (м.) хранят
+elles gardent — они (ж.) хранят
+
+oublier — забывать
+j'oublie — я забываю
+tu oublies — ты забываешь
+il oublie — он забывает
+elle oublie — она забывает
+on oublie — мы (неформ.) забываем
+nous oublions — мы забываем
+vous oubliez — вы забываете
+ils oublient — они (м.) забывают
+elles oublient — они (ж.) забывают
+
+rappeler — напоминать, вспоминать
+je rappelle — я напоминаю / я вспоминаю
+tu rappelles — ты напоминаешь
+il rappelle — он напоминает
+elle rappelle — она напоминает
+on rappelle — мы (неформ.) напоминаем
+nous rappelons — мы напоминаем
+vous rappelez — вы напоминаете
+ils rappellent — они (м.) напоминают
+elles rappellent — они (ж.) напоминают
+
+permettre — позволять, разрешать
+je permets — я позволяю / я разрешаю
+tu permets — ты позволяешь
+il permet — он позволяет
+elle permet — она позволяет
+on permet — мы (неформ.) позволяем
+nous permettons — мы позволяем
+vous permettez — вы позволяете
+ils permettent — они (м.) позволяют
+elles permettent — они (ж.) позволяют
+
+promettre — обещать
+je promets — я обещаю
+tu promets — ты обещаешь
+il promet — он обещает
+elle promet — она обещает
+on promet — мы (неформ.) обещаем
+nous promettons — мы обещаем
+vous promettez — вы обещаете
+ils promettent — они (м.) обещают
+elles promettent — они (ж.) обещают
+
+admettre — допускать, признавать
+j'admets — я допускаю / я признаю
+tu admets — ты допускаешь
+il admet — он допускает
+elle admet — она допускает
+on admet — мы (неформ.) допускаем
+nous admettons — мы допускаем
+vous admettez — вы допускаете
+ils admettent — они (м.) допускают
+elles admettent — они (ж.) допускают
+
+soumettre — подчинять, представлять
+je soumets — я подчиняю / я представляю
+tu soumets — ты подчиняешь
+il soumet — он подчиняет
+elle soumet — она подчиняет
+on soumet — мы (неформ.) подчиняем
+nous soumettons — мы подчиняем
+vous soumettez — вы подчиняете
+ils soumettent — они (м.) подчиняют
+elles soumettent — они (ж.) подчиняют
+
+transmettre — передавать
+je transmets — я передаю
+tu transmets — ты передаёшь
+il transmet — он передаёт
+elle transmet — она передаёт
+on transmet — мы (неформ.) передаём
+nous transmettons — мы передаём
+vous transmettez — вы передаёте
+ils transmettent — они (м.) передают
+elles transmettent — они (ж.) передают
+
+comprendre — понимать
+je comprends — я понимаю
+tu comprends — ты понимаешь
+il comprend — он понимает
+elle comprend — она понимает
+on comprend — мы (неформ.) понимаем
+nous comprenons — мы понимаем
+vous comprenez — вы понимаете
+ils comprennent — они (м.) понимают
+elles comprennent — они (ж.) понимают
+
+apprendre — учить, изучать; узнавать
+j'apprends — я учу / я узнаю
+tu apprends — ты учишь
+il apprend — он учит
+elle apprend — она учит
+on apprend — мы (неформ.) учим
+nous apprenons — мы учим
+vous apprenez — вы учите
+ils apprennent — они (м.) учат
+elles apprennent — они (ж.) учат
+
+surprendre — удивлять, заставать врасплох
+je surprends — я удивляю / я застаю врасплох
+tu surprends — ты удивляешь
+il surprend — он удивляет
+elle surprend — она удивляет
+on surprend — мы (неформ.) удивляем
+nous surprenons — мы удивляем
+vous surprenez — вы удивляете
+ils surprennent — они (м.) удивляют
+elles surprennent — они (ж.) удивляют
+
+entreprendre — предпринимать
+j'entreprends — я предпринимаю
+tu entreprends — ты предпринимаешь
+il entreprend — он предпринимает
+elle entreprend — она предпринимает
+on entreprend — мы (неформ.) предпринимаем
+nous entreprenons — мы предпринимаем
+vous entreprenez — вы предпринимаете
+ils entreprennent — они (м.) предпринимают
+elles entreprennent — они (ж.) предпринимают
+
+éteindre — тушить, гасить
+j'éteins — я тушу / я гашу
+tu éteins — ты тушишь
+il éteint — он тушит
+elle éteint — она тушит
+on éteint — мы (неформ.) тушим
+nous éteignons — мы тушим
+vous éteignez — вы тушите
+ils éteignent — они (м.) тушат
+elles éteignent — они (ж.) тушат
+
+peindre — красить, рисовать
+je peins — я крашу / я рисую
+tu peins — ты красишь
+il peint — он красит
+elle peint — она красит
+on peint — мы (неформ.) красим
+nous peignons — мы красим
+vous peignez — вы красите
+ils peignent — они (м.) красят
+elles peignent — они (ж.) красят
+
+craindre — бояться
+je crains — я боюсь
+tu crains — ты боишься
+il craint — он боится
+elle craint — она боится
+on craint — мы (неформ.) боимся
+nous craignons — мы боимся
+vous craignez — вы боитесь
+ils craignent — они (м.) боятся
+elles craignent — они (ж.) боятся
+
+plaindre — жалеть, сочувствовать
+je plains — я жалею / я сочувствую
+tu plains — ты жалеешь
+il plaint — он жалеет
+elle plaint — она жалеет
+on plaint — мы (неформ.) жалеем
+nous plaignons — мы жалеем
+vous plaignez — вы жалеете
+ils plaignent — они (м.) жалеют
+elles plaignent — они (ж.) жалеют
+
+joindre — присоединять
+je joins — я присоединяю
+tu joins — ты присоединяешь
+il joint — он присоединяет
+elle joint — она присоединяет
+on joint — мы (неформ.) присоединяем
+nous joignons — мы присоединяем
+vous joignez — вы присоединяете
+ils joignent — они (м.) присоединяют
+elles joignent — они (ж.) присоединяют
+
+atteindre — достигать
+j'atteins — я достигаю
+tu atteins — ты достигаешь
+il atteint — он достигает
+elle atteint — она достигает
+on atteint — мы (неформ.) достигаем
+nous atteignons — мы достигаем
+vous atteignez — вы достигаете
+ils atteignent — они (м.) достигают
+elles atteignent — они (ж.) достигают
+
+obtenir — получать, добиваться
+j'obtiens — я получаю / я добиваюсь
+tu obtiens — ты получаешь
+il obtient — он получает
+elle obtient — она получает
+on obtient — мы (неформ.) получаем
+nous obtenons — мы получаем
+vous obtenez — вы получаете
+ils obtiennent — они (м.) получают
+elles obtiennent — они (ж.) получают
+
+maintenir — поддерживать, сохранять
+je maintiens — я поддерживаю / я сохраняю
+tu maintiens — ты поддерживаешь
+il maintient — он поддерживает
+elle maintient — она поддерживает
+on maintient — мы (неформ.) поддерживаем
+nous maintenons — мы поддерживаем
+vous maintenez — вы поддерживаете
+ils maintiennent — они (м.) поддерживают
+elles maintiennent — они (ж.) поддерживают
+
+contenir — содержать, вмещать
+je contiens — я содержу / я вмещаю
+tu contiens — ты содержишь
+il contient — он содержит
+elle contient — она содержит
+on contient — мы (неформ.) содержим
+nous contenons — мы содержим
+vous contenez — вы содержите
+ils contiennent — они (м.) содержат
+elles contiennent — они (ж.) содержат
+
+appartenir — принадлежать
+j'appartiens — я принадлежу
+tu appartiens — ты принадлежишь
+il appartient — он принадлежит
+elle appartient — она принадлежит
+on appartient — мы (неформ.) принадлежим
+nous appartenons — мы принадлежим
+vous appartenez — вы принадлежите
+ils appartiennent — они (м.) принадлежат
+elles appartiennent — они (ж.) принадлежат
+
+tenir — держать
+je tiens — я держу
+tu tiens — ты держишь
+il tient — он держит
+elle tient — она держит
+on tient — мы (неформ.) держим
+nous tenons — мы держим
+vous tenez — вы держите
+ils tiennent — они (м.) держат
+elles tiennent — они (ж.) держат
+
+retenir — удерживать, запоминать
+je retiens — я удерживаю / я запоминаю
+tu retiens — ты удерживаешь
+il retient — он удерживает
+elle retient — она удерживает
+on retient — мы (неформ.) удерживаем
+nous retenons — мы удерживаем
+vous retenez — вы удерживаете
+ils retiennent — они (м.) удерживают
+elles retiennent — они (ж.) удерживают
+
+devenir — становиться
+je deviens — я становлюсь
+tu deviens — ты становишься
+il devient — он становится
+elle devient — она становится
+on devient — мы (неформ.) становимся
+nous devenons — мы становимся
+vous devenez — вы становитесь
+ils deviennent — они (м.) становятся
+elles deviennent — они (ж.) становятся
+
+revenir — возвращаться
+je reviens — я возвращаюсь
+tu reviens — ты возвращаешься
+il revient — он возвращается
+elle revient — она возвращается
+on revient — мы (неформ.) возвращаемся
+nous revenons — мы возвращаемся
+vous revenez — вы возвращаетесь
+ils reviennent — они (м.) возвращаются
+elles reviennent — они (ж.) возвращаются
+
+prévenir — предупреждать
+je préviens — я предупреждаю
+tu préviens — ты предупреждаешь
+il prévient — он предупреждает
+elle prévient — она предупреждает
+on prévient — мы (неформ.) предупреждаем
+nous prévenons — мы предупреждаем
+vous prévenez — вы предупреждаете
+ils préviennent — они (м.) предупреждают
+elles préviennent — они (ж.) предупреждают
+
+intervenir — вмешиваться
+j'interviens — я вмешиваюсь
+tu interviens — ты вмешиваешься
+il intervient — он вмешивается
+elle intervient — она вмешивается
+on intervient — мы (неформ.) вмешиваемся
+nous intervenons — мы вмешиваемся
+vous intervenez — вы вмешиваетесь
+ils interviennent — они (м.) вмешиваются
+elles interviennent — они (ж.) вмешиваются
+
+accepter — принимать, соглашаться
+j'accepte — я принимаю / я соглашаюсь
+tu acceptes — ты принимаешь
+il accepte — он принимает
+elle accepte — она принимает
+on accepte — мы (неформ.) принимаем
+nous acceptons — мы принимаем
+vous acceptez — вы принимаете
+ils acceptent — они (м.) принимают
+elles acceptent — они (ж.) принимают
+
+refuser — отказывать
+je refuse — я отказываю
+tu refuses — ты отказываешь
+il refuse — он отказывает
+elle refuse — она отказывает
+on refuse — мы (неформ.) отказываем
+nous refusons — мы отказываем
+vous refusez — вы отказываете
+ils refusent — они (м.) отказывают
+elles refusent — они (ж.) отказывают
+
+décider — решать
+je décide — я решаю
+tu décides — ты решаешь
+il décide — он решает
+elle décide — она решает
+on décide — мы (неформ.) решаем
+nous décidons — мы решаем
+vous décidez — вы решаете
+ils décident — они (м.) решают
+elles décident — они (ж.) решают
+
+préparer — готовить, приготовлять
+je prépare — я готовлю
+tu prépares — ты готовишь
+il prépare — он готовит
+elle prépare — она готовит
+on prépare — мы (неформ.) готовим
+nous préparons — мы готовим
+vous préparez — вы готовите
+ils préparent — они (м.) готовят
+elles préparent — они (ж.) готовят
+
+recevoir — получать
+je reçois — я получаю
+tu reçois — ты получаешь
+il reçoit — он получает
+elle reçoit — она получает
+on reçoit — мы (неформ.) получаем
+nous recevons — мы получаем
+vous recevez — вы получаете
+ils reçoivent — они (м.) получают
+elles reçoivent — они (ж.) получают
+
+concevoir — задумывать, разрабатывать
+je conçois — я задумываю / я разрабатываю
+tu conçois — ты задумываешь
+il conçoit — он задумывает
+elle conçoit — она задумывает
+on conçoit — мы (неформ.) задумываем
+nous concevons — мы задумываем
+vous concevez — вы задумываете
+ils conçoivent — они (м.) задумывают
+elles conçoivent — elles (ж.) задумывают
+
+apercevoir — замечать, различать
+j'aperçois — я замечаю
+tu aperçois — ты замечаешь
+il aperçoit — он замечает
+elle aperçoit — она замечает
+on aperçoit — мы (неформ.) замечаем
+nous apercevons — мы замечаем
+vous apercevez — вы замечаете
+ils aperçoivent — они (м.) замечают
+elles aperçoivent — они (ж.) замечают
+
+falloir — быть нужным, следовать
+il faut — нужно, необходимо
+
+pleuvoir — идти (о дожде)
+il pleut — идёт дождь
+
+neiger — идти (о снеге)
+il neige — идёт снег
+
+valoir — стоить
+je vaux — я стою
+tu vaux — ты стоишь
+il vaut — он стоит
+elle vaut — она стоит
+on vaut — мы (неформ.) стоим
+nous valons — мы стоим
+vous valez — вы стоите
+ils valent — они (м.) стоят
+elles valent — они (ж.) стоят
+
+aider — помогать
+j'aide — я помогаю
+tu aides — ты помогаешь
+il aide — он помогает
+elle aide — она помогает
+on aide — мы (неформ.) помогаем
+nous aidons — мы помогаем
+vous aidez — вы помогаете
+ils aident — они (м.) помогают
+elles aident — они (ж.) помогают
+
+arrêter — останавливать(ся)
+j'arrête — я останавливаю
+tu arrêtes — ты останавливаешь
+il arrête — он останавливает
+elle arrête — она останавливает
+on arrête — мы (неформ.) останавливаем
+nous arrêtons — мы останавливаем
+vous arrêtez — вы останавливаете
+ils arrêtent — они (м.) останавливают
+elles arrêtent — они (ж.) останавливают
+
+laisser — оставлять, позволять
+je laisse — я оставляю / я позволяю
+tu laisses — ты оставляешь
+il laisse — он оставляет
+elle laisse — она оставляет
+on laisse — мы (неформ.) оставляем
+nous laissons — мы оставляем
+vous laissez — вы оставляете
+ils laissent — они (м.) оставляют
+elles laissent — они (ж.) оставляют
+
+vivre — жить
+je vis — я живу
+tu vis — ты живёшь
+il vit — он живёт
+elle vit — она живёт
+on vit — мы (неформ.) живём
+nous vivons — мы живём
+vous vivez — вы живёте
+ils vivent — они (м.) живут
+elles vivent — они (ж.) живут
+
+rendre — возвращать, отдавать
+je rends — я возвращаю / я отдаю
+tu rends — ты возвращаешь
+il rend — он возвращает
+elle rend — она возвращает
+on rend — мы (неформ.) возвращаем
+nous rendons — мы возвращаем
+vous rendez — вы возвращаете
+ils rendent — они (м.) возвращают
+elles rendent — они (ж.) возвращают
+
+envoyer — посылать, отправлять
+j'envoie — я посылаю
+tu envoies — ты посылаешь
+il envoie — он посылает
+elle envoie — она посылает
+on envoie — мы (неформ.) посылаем
+nous envoyons — мы посылаем
+vous envoyez — вы посылаете
+ils envoient — они (м.) посылают
+elles envoient — они (ж.) посылают
+
+quitter — покидать, уезжать из
+je quitte — я покидаю
+tu quittes — ты покидаешь
+il quitte — он покидает
+elle quitte — она покидает
+on quitte — мы (неформ.) покидаем
+nous quittons — мы покидаем
+vous quittez — вы покидаете
+ils quittent — они (м.) покидают
+elles quittent — они (ж.) покидают
+
+emmener — уводить, увозить
+j'emmène — я увожу
+tu emmènes — ты уводишь
+il emmène — он уводит
+elle emmène — она уводит
+on emmène — мы (неформ.) уводим
+nous emmenons — мы уводим
+vous emmenez — вы уводите
+ils emmènent — они (м.) уводят
+elles emmènent — они (ж.) уводят
+
+toucher — трогать, касаться
+je touche — я трогаю
+tu touches — ты трогаешь
+il touche — он трогает
+elle touche — она трогает
+on touche — мы (неформ.) трогаем
+nous touchons — мы трогаем
+vous touchez — вы трогаете
+ils touchent — они (м.) трогают
+elles touchent — они (ж.) трогают
+
+raconter — рассказывать
+je raconte — я рассказываю
+tu racontes — ты рассказываешь
+il raconte — он рассказывает
+elle raconte — она рассказывает
+on raconte — мы (неформ.) рассказываем
+nous racontons — мы рассказываем
+vous racontez — вы рассказываете
+ils racontent — они (м.) рассказывают
+elles racontent — они (ж.) рассказывают
+
+sauver — спасать
+je sauve — я спасаю
+tu sauves — ты спасаешь
+il sauve — он спасает
+elle sauve — она спасает
+on sauve — мы (неформ.) спасаем
+nous sauvons — мы спасаем
+vous sauvez — вы спасаете
+ils sauvent — они (м.) спасают
+elles sauvent — они (ж.) спасают
+
+rencontrer — встречать
+je rencontre — я встречаю
+tu rencontres — ты встречаешь
+il rencontre — он встречает
+elle rencontre — она встречает
+on rencontre — мы (неформ.) встречаем
+nous rencontrons — мы встречаем
+vous rencontrez — вы встречаете
+ils rencontrent — они (м.) встречают
+elles rencontrent — они (ж.) встречают
+
+fermer — закрывать
+je ferme — я закрываю
+tu fermes — ты закрываешь
+il ferme — он закрывает
+elle ferme — она закрывает
+on ferme — мы (неформ.) закрываем
+nous fermons — мы закрываем
+vous fermez — вы закрываете
+ils ferment — они (м.) закрывают
+elles ferment — они (ж.) закрывают
+
+bouger — двигать(ся)
+je bouge — я двигаю
+tu bouges — ты двигаешь
+il bouge — он двигает
+elle bouge — она двигает
+on bouge — мы (неформ.) двигаем
+nous bougeons — мы двигаем
+vous bougez — вы двигаете
+ils bougent — они (м.) двигают
+elles bougent — они (ж.) двигают
+
+occuper — занимать
+j'occupe — я занимаю
+tu occupes — ты занимаешь
+il occupe — он занимает
+elle occupe — она занимает
+on occupe — мы (неформ.) занимаем
+nous occupons — мы занимаем
+vous occupez — вы занимаете
+ils occupent — они (м.) занимают
+elles occupent — они (ж.) занимают
+
+excuser — извинять
+j'excuse — я извиняю
+tu excuses — ты извиняешь
+il excuse — он извиняет
+elle excuse — она извиняет
+on excuse — мы (неформ.) извиняем
+nous excusons — мы извиняем
+vous excusez — вы извиняете
+ils excusent — они (м.) извиняют
+elles excusent — они (ж.) извиняют
+
+coucher — укладывать спать
+je couche — я укладываю
+tu couches — ты укладываешь
+il couche — он укладывает
+elle couche — она укладывает
+on couche — мы (неформ.) укладываем
+nous couchons — мы укладываем
+vous couchez — вы укладываете
+ils couchent — они (м.) укладывают
+elles couchent — они (ж.) укладывают
+
+préférer — предпочитать
+je préfère — я предпочитаю
+tu préfères — ты предпочитаешь
+il préfère — он предпочитает
+elle préfère — она предпочитает
+on préfère — мы (неформ.) предпочитаем
+nous préférons — мы предпочитаем
+vous préférez — вы предпочитаете
+ils préfèrent — они (м.) предпочитают
+elles préfèrent — они (ж.) предпочитают
+
+retrouver — находить снова, встречаться с
+je retrouve — я нахожу снова / я встречаюсь с
+tu retrouves — ты находишь снова
+il retrouve — он находит снова
+elle retrouve — она находит снова
+on retrouve — мы (неформ.) находим снова
+nous retrouvons — мы находим снова
+vous retrouvez — вы находите снова
+ils retrouvent — они (м.) находят снова
+elles retrouvent — они (ж.) находят снова
+
+entendre — слышать
+j'entends — я слышу
+tu entends — ты слышишь
+il entend — он слышит
+elle entend — она слышит
+on entend — мы (неформ.) слышим
+nous entendons — мы слышим
+vous entendez — вы слышите
+ils entendent — они (м.) слышат
+elles entendent — они (ж.) слышат
+
+tirer — тянуть, стрелять
+je tire — я тяну / я стреляю
+tu tires — ты тянешь
+il tire — он тянет
+elle tire — она тянет
+on tire — мы (неформ.) тянем
+nous tirons — мы тянем
+vous tirez — вы тянете
+ils tirent — они (м.) тянут
+elles tirent — они (ж.) тянут
+
+prier — молить, просить
+je prie — я молю / я прошу
+tu pries — ты молишь
+il prie — он молит
+elle prie — она молит
+on prie — мы (неформ.) молим
+nous prions — мы молим
+vous priez — вы молите
+ils prient — они (м.) молят
+elles prient — они (ж.) молят
+
+amuser — развлекать
+j'amuse — я развлекаю
+tu amuses — ты развлекаешь
+il amuse — он развлекает
+elle amuse — она развлекает
+on amuse — мы (неформ.) развлекаем
+nous amusons — мы развлекаем
+vous amusez — вы развлекаете
+ils amusent — они (м.) развлекают
+elles amusent — они (ж.) развлекают
+
+intéresser — интересовать
+j'intéresse — я интересую
+tu intéresses — ты интересуешь
+il intéresse — он интересует
+elle intéresse — она интересует
+on intéresse — мы (неформ.) интересуем
+nous intéressons — мы интересуем
+vous intéressez — вы интересуете
+ils intéressent — они (м.) интересуют
+elles intéressent — они (ж.) интересуют
+
+rire — смеяться
+je ris — я смеюсь
+tu ris — ты смеёшься
+il rit — он смеётся
+elle rit — она смеётся
+on rit — мы (неформ.) смеёмся
+nous rions — мы смеёмся
+vous riez — вы смеётесь
+ils rient — они (м.) смеются
+elles rient — они (ж.) смеются
+
+pardonner — прощать
+je pardonne — я прощаю
+tu pardonnes — ты прощаешь
+il pardonne — он прощает
+elle pardonne — она прощает
+on pardonne — мы (неформ.) прощаем
+nous pardonnons — мы прощаем
+vous pardonnez — вы прощаете
+ils pardonnent — они (м.) прощают
+elles pardonnent — они (ж.) прощают
+
+embrasser — целовать, обнимать
+j'embrasse — я целую / я обнимаю
+tu embrasses — ты целуешь
+il embrasse — он целует
+elle embrasse — она целует
+on embrasse — мы (неформ.) целуем
+nous embrassons — мы целуем
+vous embrassez — вы целуете
+ils embrassent — они (м.) целуют
+elles embrassent — они (ж.) целуют
+
+supposer — предполагать
+je suppose — я предполагаю
+tu supposes — ты предполагаешь
+il suppose — он предполагает
+elle suppose — она предполагает
+on suppose — мы (неформ.) предполагаем
+nous supposons — мы предполагаем
+vous supposez — вы предполагаете
+ils supposent — они (м.) предполагают
+elles supposent — они (ж.) предполагают
+
+épouser — жениться, выходить замуж
+j'épouse — я женюсь / я выхожу замуж
+tu épouses — ты женишься
+il épouse — он женится
+elle épouse — она выходит замуж
+on épouse — мы (неформ.) женимся
+nous épousons — мы женимся
+vous épousez — вы женитесь
+ils épousent — они (м.) женятся
+elles épousent — они (ж.) выходят замуж
+
+approcher — приближаться
+j'approche — я приближаюсь
+tu approches — ты приближаешься
+il approche — он приближается
+elle approche — она приближается
+on approche — мы (неформ.) приближаемся
+nous approchons — мы приближаемся
+vous approchez — вы приближаетесь
+ils approchent — они (м.) приближаются
+elles approchent — они (ж.) приближаются
+
+crier — кричать
+je crie — я кричу
+tu cries — ты кричишь
+il crie — он кричит
+elle crie — она кричит
+on crie — мы (неформ.) кричим
+nous crions — мы кричим
+vous criez — вы кричите
+ils crient — они (м.) кричат
+elles crient — они (ж.) кричат
+
+inviter — приглашать
+j'invite — я приглашаю
+tu invites — ты приглашаешь
+il invite — он приглашает
+elle invite — она приглашает
+on invite — мы (неформ.) приглашаем
+nous invitons — мы приглашаем
+vous invitez — вы приглашаете
+ils invitent — они (м.) приглашают
+elles invitent — они (ж.) приглашают
+
+arranger — устраивать, налаживать
+j'arrange — я устраиваю
+tu arranges — ты устраиваешь
+il arrange — он устраивает
+elle arrange — она устраивает
+on arrange — мы (неформ.) устраиваем
+nous arrangeons — мы устраиваем
+vous arrangez — вы устраиваете
+ils arrangent — они (м.) устраивают
+elles arrangent — они (ж.) устраивают
+
+remercier — благодарить
+je remercie — я благодарю
+tu remercies — ты благодаришь
+il remercie — он благодарит
+elle remercie — она благодарит
+on remercie — мы (неформ.) благодарим
+nous remercions — мы благодарим
+vous remerciez — вы благодарите
+ils remercient — они (м.) благодарят
+elles remercient — они (ж.) благодарят
+
+signer — подписывать
+je signe — я подписываю
+tu signes — ты подписываешь
+il signe — он подписывает
+elle signe — она подписывает
+on signe — мы (неформ.) подписываем
+nous signons — мы подписываем
+vous signez — вы подписываете
+ils signent — они (м.) подписывают
+elles signent — они (ж.) подписывают
+
+accompagner — сопровождать
+j'accompagne — я сопровождаю
+tu accompagnes — ты сопровождаешь
+il accompagne — он сопровождает
+elle accompagne — она сопровождает
+on accompagne — мы (неформ.) сопровождаем
+nous accompagnons — мы сопровождаем
+vous accompagnez — вы сопровождаете
+ils accompagnent — они (м.) сопровождают
+elles accompagnent — они (ж.) сопровождают
+
+oser — осмеливаться, сметь
+j'ose — я осмеливаюсь
+tu oses — ты осмеливаешься
+il ose — он осмеливается
+elle ose — она осмеливается
+on ose — мы (неформ.) осмеливаемся
+nous osons — мы осмеливаемся
+vous osez — вы осмеливаетесь
+ils osent — они (м.) осмеливаются
+elles osent — они (ж.) осмеливаются
+
+annuler — отменять
+j'annule — я отменяю
+tu annules — ты отменяешь
+il annule — он отменяет
+elle annule — она отменяет
+on annule — мы (неформ.) отменяем
+nous annulons — мы отменяем
+vous annulez — вы отменяете
+ils annulent — они (м.) отменяют
+elles annulent — они (ж.) отменяют
+
+laver — мыть
+je lave — я мою
+tu laves — ты моешь
+il lave — он моет
+elle lave — она моет
+on lave — мы (неформ.) моем
+nous lavons — мы моем
+vous lavez — вы моете
+ils lavent — они (м.) моют
+elles lavent — они (ж.) моют
+
+épeler — произносить по буквам
+j'épelle — я произношу по буквам
+tu épelles — ты произносишь по буквам
+il épelle — он произносит по буквам
+elle épelle — она произносит по буквам
+on épelle — мы (неформ.) произносим по буквам
+nous épelons — мы произносим по буквам
+vous épelez — вы произносите по буквам
+ils épellent — они (м.) произносят по буквам
+elles épellent — они (ж.) произносят по буквам
+
+allumer — зажигать, включать
+j'allume — я зажигаю / я включаю
+tu allumes — ты зажигаешь
+il allume — он зажигает
+elle allume — она зажигает
+on allume — мы (неформ.) зажигаем
+nous allumons — мы зажигаем
+vous allumez — вы зажигаете
+ils allument — они (м.) зажигают
+elles allument — они (ж.) зажигают
+
+ajouter — добавлять
+j'ajoute — я добавляю
+tu ajoutes — ты добавляешь
+il ajoute — он добавляет
+elle ajoute — она добавляет
+on ajoute — мы (неформ.) добавляем
+nous ajoutons — мы добавляем
+vous ajoutez — вы добавляете
+ils ajoutent — они (м.) добавляют
+elles ajoutent — они (ж.) добавляют
+
+goûter — пробовать на вкус
+je goûte — я пробую на вкус
+tu goûtes — ты пробуешь на вкус
+il goûte — он пробует на вкус
+elle goûte — она пробует на вкус
+on goûte — мы (неформ.) пробуем на вкус
+nous goûtons — мы пробуем на вкус
+vous goûtez — вы пробуете на вкус
+ils goûtent — они (м.) пробуют на вкус
+elles goûtent — они (ж.) пробуют на вкус
+
+coûter — стоить
+je coûte — я стою
+tu coûtes — ты стоишь
+il coûte — он стоит
+elle coûte — она стоит
+on coûte — мы (неформ.) стоим
+nous coûtons — мы стоим
+vous coûtez — вы стоите
+ils coûtent — они (м.) стоят
+elles coûtent — они (ж.) стоят
+
+cuire — варить, печь
+je cuis — я варю / я пеку
+tu cuis — ты варишь
+il cuit — он варит
+elle cuit — она варит
+on cuit — мы (неформ.) варим
+nous cuisons — мы варим
+vous cuisez — вы варите
+ils cuisent — они (м.) варят
+elles cuisent — они (ж.) варят
+
+décrire — описывать
+je décris — я описываю
+tu décris — ты описываешь
+il décrit — он описывает
+elle décrit — она описывает
+on décrit — мы (неформ.) описываем
+nous décrivons — мы описываем
+vous décrivez — вы описываете
+ils décrivent — они (м.) описывают
+elles décrivent — они (ж.) описывают
+
+effacer — стирать
+j'efface — я стираю
+tu effaces — ты стираешь
+il efface — он стирает
+elle efface — она стирает
+on efface — мы (неформ.) стираем
+nous effaçons — мы стираем
+vous effacez — вы стираете
+ils effacent — они (м.) стирают
+elles effacent — они (ж.) стирают
+
+enseigner — обучать, преподавать
+j'enseigne — я обучаю / я преподаю
+tu enseignes — ты обучаешь
+il enseigne — он обучает
+elle enseigne — она обучает
+on enseigne — мы (неформ.) обучаем
+nous enseignons — мы обучаем
+vous enseignez — вы обучаете
+ils enseignent — они (м.) обучают
+elles enseignent — они (ж.) обучают
+
+nettoyer — чистить, убирать
+je nettoie — я чищу
+tu nettoies — ты чистишь
+il nettoie — он чистит
+elle nettoie — она чистит
+on nettoie — мы (неформ.) чистим
+nous nettoyons — мы чистим
+vous nettoyez — вы чистите
+ils nettoient — они (м.) чистят
+elles nettoient — они (ж.) чистят
+
+noter — отмечать, записывать
+je note — я отмечаю / я записываю
+tu notes — ты отмечаешь
+il note — он отмечает
+elle note — она отмечает
+on note — мы (неформ.) отмечаем
+nous notons — мы отмечаем
+vous notez — вы отмечаете
+ils notent — они (м.) отмечают
+elles notent — они (ж.) отмечают
+
+remplacer — заменять
+je remplace — я заменяю
+tu remplaces — ты заменяешь
+il remplace — он заменяет
+elle remplace — она заменяет
+on remplace — мы (неформ.) заменяем
+nous remplaçons — мы заменяем
+vous remplacez — вы заменяете
+ils remplacent — они (м.) заменяют
+elles remplacent — они (ж.) заменяют
+
+visiter — посещать, осматривать
+je visite — я посещаю
+tu visites — ты посещаешь
+il visite — он посещает
+elle visite — она посещает
+on visite — мы (неформ.) посещаем
+nous visitons — мы посещаем
+vous visitez — вы посещаете
+ils visitent — они (м.) посещают
+elles visitent — они (ж.) посещают
+
+souhaiter — желать
+je souhaite — я желаю
+tu souhaites — ты желаешь
+il souhaite — он желает
+elle souhaite — она желает
+on souhaite — мы (неформ.) желаем
+nous souhaitons — мы желаем
+vous souhaitez — вы желаете
+ils souhaitent — они (м.) желают
+elles souhaitent — они (ж.) желают
+
+acclamer — приветствовать, одобрять
+j'acclame — я приветствую / я одобряю
+tu acclames — ты приветствуешь
+il acclame — он приветствует
+elle acclame — она приветствует
+on acclame — мы (неформ.) приветствуем
+nous acclamons — мы приветствуем
+vous acclamez — вы приветствуете
+ils acclament — они (м.) приветствуют
+elles acclament — они (ж.) приветствуют
+
+accorder — согласовывать, давать
+j'accorde — я согласовываю / я даю
+tu accordes — ты согласовываешь
+il accorde — он согласовывает
+elle accorde — она согласовывает
+on accorde — мы (неформ.) согласовываем
+nous accordons — мы согласовываем
+vous accordez — вы согласовываете
+ils accordent — они (м.) согласовывают
+elles accordent — они (ж.) согласовывают
+
+accourir — прибегать, сбегаться
+j'accours — я прибегаю
+tu accours — ты прибегаешь
+il accourt — он прибегает
+elle accourt — она прибегает
+on accourt — мы (неформ.) прибегаем
+nous accourons — мы прибегаем
+vous accourez — вы прибегаете
+ils accourent — они (м.) прибегают
+elles accourent — они (ж.) прибегают
+
+accrocher — вешать, цеплять
+j'accroche — я вешаю / я цепляю
+tu accroches — ты вешаешь
+il accroche — он вешает
+elle accroche — она вешает
+on accroche — мы (неформ.) вешаем
+nous accrochons — мы вешаем
+vous accrochez — вы вешаете
+ils accrochent — они (м.) вешают
+elles accrochent — они (ж.) вешают
+
+accueillir — принимать, встречать
+j'accueille — я принимаю / я встречаю
+tu accueilles — ты принимаешь
+il accueille — он принимает
+elle accueille — она принимает
+on accueille — мы (неформ.) принимаем
+nous accueillons — мы принимаем
+vous accueillez — вы принимаете
+ils accueillent — они (м.) принимают
+elles accueillent — они (ж.) принимают
+
+acquérir — приобретать
+j'acquiers — я приобретаю
+tu acquiers — ты приобретаешь
+il acquiert — он приобретает
+elle acquiert — она приобретает
+on acquiert — мы (неформ.) приобретаем
+nous acquérons — мы приобретаем
+vous acquérez — вы приобретаете
+ils acquièrent — они (м.) приобретают
+elles acquièrent — они (ж.) приобретают
+
+adjoindre — присоединять
+j'adjoins — я присоединяю
+tu adjoins — ты присоединяешь
+il adjoint — он присоединяет
+elle adjoint — она присоединяет
+on adjoint — мы (неформ.) присоединяем
+nous adjoignons — мы присоединяем
+vous adjoignez — вы присоединяете
+ils adjoignent — они (м.) присоединяют
+elles adjoignent — они (ж.) присоединяют
+
+admirer — восхищаться
+j'admire — я восхищаюсь
+tu admires — ты восхищаешься
+il admire — он восхищается
+elle admire — она восхищается
+on admire — мы (неформ.) восхищаемся
+nous admirons — мы восхищаемся
+vous admirez — вы восхищаетесь
+ils admirent — они (м.) восхищаются
+elles admirent — они (ж.) восхищаются
+
+annoncer — объявлять
+j'annonce — я объявляю
+tu annonces — ты объявляешь
+il annonce — он объявляет
+elle annonce — она объявляет
+on annonce — мы (неформ.) объявляем
+nous annonçons — мы объявляем
+vous annoncez — вы объявляете
+ils annoncent — они (м.) объявляют
+elles annoncent — они (ж.) объявляют
+
+arracher — вырывать, срывать
+j'arrache — я вырываю / я срываю
+tu arraches — ты вырываешь
+il arrache — он вырывает
+elle arrache — она вырывает
+on arrache — мы (неформ.) вырываем
+nous arrachons — мы вырываем
+vous arrachez — вы вырываете
+ils arrachent — они (м.) вырывают
+elles arrachent — они (ж.) вырывают
+
+augmenter — увеличивать
+j'augmente — я увеличиваю
+tu augmentes — ты увеличиваешь
+il augmente — он увеличивает
+elle augmente — она увеличивает
+on augmente — мы (неформ.) увеличиваем
+nous augmentons — мы увеличиваем
+vous augmentez — вы увеличиваете
+ils augmentent — они (м.) увеличивают
+elles augmentent — они (ж.) увеличивают
+
+blaguer — шутить
+je blague — я шучу
+tu blagues — ты шутишь
+il blague — он шутит
+elle blague — она шутит
+on blague — мы (неформ.) шутим
+nous blaguons — мы шутим
+vous blaguez — вы шутите
+ils blaguent — они (м.) шутят
+elles blaguent — они (ж.) шутят
+
+causer — вызывать, болтать
+je cause — я вызываю / я болтаю
+tu causes — ты вызываешь
+il cause — он вызывает
+elle cause — она вызывает
+on cause — мы (неформ.) вызываем
+nous causons — мы вызываем
+vous causez — вы вызываете
+ils causent — они (м.) вызывают
+elles causent — они (ж.) вызывают
+
+cheminer — идти, продвигаться
+je chemine — я иду / я продвигаюсь
+tu chemines — ты идёшь
+il chemine — он идёт
+elle chemine — она идёт
+on chemine — мы (неформ.) идём
+nous cheminons — мы идём
+vous cheminez — вы идёте
+ils cheminent — они (м.) идут
+elles cheminent — они (ж.) идут
+
+confondre — путать, смешивать
+je confonds — я путаю
+tu confonds — ты путаешь
+il confond — он путает
+elle confond — она путает
+on confond — мы (неформ.) путаем
+nous confondons — мы путаем
+vous confondez — вы путаете
+ils confondent — они (м.) путают
+elles confondent — они (ж.) путают
+
+conseiller — советовать
+je conseille — я советую
+tu conseilles — ты советуешь
+il conseille — он советует
+elle conseille — она советует
+on conseille — мы (неформ.) советуем
+nous conseillons — мы советуем
+vous conseillez — вы советуете
+ils conseillent — они (м.) советуют
+elles conseillent — они (ж.) советуют
+
+dépenser — тратить
+je dépense — я трачу
+tu dépenses — ты тратишь
+il dépense — он тратит
+elle dépense — она тратит
+on dépense — мы (неформ.) тратим
+nous dépensons — мы тратим
+vous dépensez — вы тратите
+ils dépensent — они (м.) тратят
+elles dépensent — они (ж.) тратят
+
+emprunter — занимать, брать взаймы
+j'emprunte — я занимаю / я беру взаймы
+tu empruntes — ты занимаешь
+il emprunte — он занимает
+elle emprunte — она занимает
+on emprunte — мы (неформ.) занимаем
+nous empruntons — мы занимаем
+vous empruntez — вы занимаете
+ils empruntent — они (м.) занимают
+elles empruntent — они (ж.) занимают
+
+endormir — усыплять
+j'endors — я усыпляю
+tu endors — ты усыпляешь
+il endort — он усыпляет
+elle endort — она усыпляет
+on endort — мы (неформ.) усыпляем
+nous endormons — мы усыпляем
+vous endormez — вы усыпляете
+ils endorment — они (м.) усыпляют
+elles endorment — они (ж.) усыпляют
+
+éviter — избегать
+j'évite — я избегаю
+tu évites — ты избегаешь
+il évite — он избегает
+elle évite — она избегает
+on évite — мы (неформ.) избегаем
+nous évitons — мы избегаем
+vous évitez — вы избегаете
+ils évitent — они (м.) избегают
+elles évitent — они (ж.) избегают
+
+féliciter — поздравлять
+je félicite — я поздравляю
+tu félicites — ты поздравляешь
+il félicite — он поздравляет
+elle félicite — она поздравляет
+on félicite — мы (неформ.) поздравляем
+nous félicitons — мы поздравляем
+vous félicitez — вы поздравляете
+ils félicitent — они (м.) поздравляют
+elles félicitent — они (ж.) поздравляют
+
+geindre — стонать
+je geins — я стону
+tu geins — ты стонешь
+il geint — он стонет
+elle geint — она стонет
+on geint — мы (неформ.) стонем
+nous geignons — мы стонем
+vous geignez — вы стонете
+ils geignent — они (м.) стонут
+elles geignent — они (ж.) стонут
+
+informer — информировать
+j'informe — я информирую
+tu informes — ты информируешь
+il informe — он информирует
+elle informe — она информирует
+on informe — мы (неформ.) информируем
+nous informons — мы информируем
+vous informez — вы информируете
+ils informent — они (м.) информируют
+elles informent — они (ж.) информируют
+
+nommer — называть, назначать
+je nomme — я называю / я назначаю
+tu nommes — ты называешь
+il nomme — он называет
+elle nomme — она называет
+on nomme — мы (неформ.) называем
+nous nommons — мы называем
+vous nommez — вы называете
+ils nomment — они (м.) называют
+elles nomment — они (ж.) называют
+
+louer — хвалить, снимать (в аренду)
+je loue — я хвалю / я снимаю
+tu loues — ты хвалишь
+il loue — он хвалит
+elle loue — она хвалит
+on loue — мы (неформ.) хвалим
+nous louons — мы хвалим
+vous louez — вы хвалите
+ils louent — они (м.) хвалят
+elles louent — они (ж.) хвалят
+
+ressentir — чувствовать, ощущать
+je ressens — я чувствую
+tu ressens — ты чувствуешь
+il ressent — он чувствует
+elle ressent — она чувствует
+on ressent — мы (неформ.) чувствуем
+nous ressentons — мы чувствуем
+vous ressentez — вы чувствуете
+ils ressentent — они (м.) чувствуют
+elles ressentent — они (ж.) чувствуют
+
+secouer — трясти
+je secoue — я трясу
+tu secoues — ты трясёшь
+il secoue — он трясёт
+elle secoue — она трясёт
+on secoue — мы (неформ.) трясём
+nous secouons — мы трясём
+vous secouez — вы трясёте
+ils secouent — они (м.) трясут
+elles secouent — они (ж.) трясут
+
+soutenir — поддерживать
+je soutiens — я поддерживаю
+tu soutiens — ты поддерживаешь
+il soutient — он поддерживает
+elle soutient — она поддерживает
+on soutient — мы (неформ.) поддерживаем
+nous soutenons — мы поддерживаем
+vous soutenez — вы поддерживаете
+ils soutiennent — они (м.) поддерживают
+elles soutiennent — они (ж.) поддерживают
+
+jurer — клясться, ругаться
+je jure — я клянусь / я ругаюсь
+tu jures — ты клянёшься
+il jure — он клянётся
+elle jure — она клянётся
+on jure — мы (неформ.) клянёмся
+nous jurons — мы клянёмся
+vous jurez — вы клянётесь
+ils jurent — они (м.) клянутся
+elles jurent — они (ж.) клянутся
+
+méprendre (se) — ошибаться, заблуждаться
+je me méprends — я ошибаюсь
+tu te méprends — ты ошибаешься
+il se méprend — он ошибается
+elle se méprend — она ошибается
+on se méprend — мы (неформ.) ошибаемся
+nous nous méprenons — мы ошибаемся
+vous vous méprenez — вы ошибаетесь
+ils se méprennent — они (м.) ошибаются
+elles se méprennent — они (ж.) ошибаются
+
+mélanger — смешивать
+je mélange — я смешиваю
+tu mélanges — ты смешиваешь
+il mélange — он смешивает
+elle mélange — она смешивает
+on mélange — мы (неформ.) смешиваем
+nous mélangeons — мы смешиваем
+vous mélangez — вы смешиваете
+ils mélangent — они (м.) смешивают
+elles mélangent — они (ж.) смешивают
+
+reconduire — провожать, продлевать
+je reconduis — я провожаю / я продлеваю
+tu reconduis — ты провожаешь
+il reconduit — он провожает
+elle reconduit — она провожает
+on reconduit — мы (неформ.) провожаем
+nous reconduisons — мы провожаем
+vous reconduisez — вы провожаете
+ils reconduisent — они (м.) провожают
+elles reconduisent — они (ж.) провожают
+
+rejeter — отвергать
+je rejette — я отвергаю
+tu rejettes — ты отвергаешь
+il rejette — он отвергает
+elle rejette — она отвергает
+on rejette — мы (неформ.) отвергаем
+nous rejetons — мы отвергаем
+vous rejetez — вы отвергаете
+ils rejettent — они (м.) отвергают
+elles rejettent — они (ж.) отвергают
+
+gérer — управлять
+je gère — я управляю
+tu gères — ты управляешь
+il gère — он управляет
+elle gère — она управляет
+on gère — мы (неформ.) управляем
+nous gérons — мы управляем
+vous gérez — вы управляете
+ils gèrent — они (м.) управляют
+elles gèrent — они (ж.) управляют
+
+refléter — отражать
+je reflète — я отражаю
+tu reflètes — ты отражаешь
+il reflète — он отражает
+elle reflète — она отражает
+on reflète — мы (неформ.) отражаем
+nous reflétons — мы отражаем
+vous reflétez — вы отражаете
+ils reflètent — они (м.) отражают
+elles reflètent — они (ж.) отражают
+
+presser — давить, торопить
+je presse — я давлю / я тороплю
+tu presses — ты давишь
+il presse — он давит
+elle presse — она давит
+on presse — мы (неформ.) давим
+nous pressons — мы давим
+vous pressez — вы давите
+ils pressent — они (м.) давят
+elles pressent — они (ж.) давят
+
+répandre — распространять
+je répands — я распространяю
+tu répands — ты распространяешь
+il répand — он распространяет
+elle répand — она распространяет
+on répand — мы (неформ.) распространяем
+nous répandons — мы распространяем
+vous répandez — вы распространяете
+ils répandent — они (м.) распространяют
+elles répandent — они (ж.) распространяют
+
+frapper — ударять, стучать
+je frappe — я ударяю / я стучу
+tu frappes — ты ударяешь
+il frappe — он ударяет
+elle frappe — она ударяет
+on frappe — мы (неформ.) ударяем
+nous frappons — мы ударяем
+vous frappez — вы ударяете
+ils frappent — они (м.) ударяют
+elles frappent — они (ж.) ударяют
+
+remettre — передавать, откладывать
+je remets — я передаю / я откладываю
+tu remets — ты передаёшь
+il remet — он передаёт
+elle remet — она передаёт
+on remet — мы (неформ.) передаём
+nous remettons — мы передаём
+vous remettez — вы передаёте
+ils remettent — они (м.) передают
+elles remettent — они (ж.) передают
+
+revêtir — одевать, покрывать
+je revêts — я одеваю
+tu revêts — ты одеваешь
+il revêt — он одевает
+elle revêt — она одевает
+on revêt — мы (неформ.) одеваем
+nous revêtons — мы одеваем
+vous revêtez — вы одеваете
+ils revêtent — они (м.) одевают
+elles revêtent — они (ж.) одевают
+
+enregistrer — записывать
+j'enregistre — я записываю
+tu enregistres — ты записываешь
+il enregistre — он записывает
+elle enregistre — она записывает
+on enregistre — мы (неформ.) записываем
+nous enregistrons — мы записываем
+vous enregistrez — вы записываете
+ils enregistrent — они (м.) записывают
+elles enregistrent — они (ж.) записывают
+
+pêcher — ловить рыбу
+je pêche — я ловлю рыбу
+tu pêches — ты ловишь рыбу
+il pêche — он ловит рыбу
+elle pêche — она ловит рыбу
+on pêche — мы (неформ.) ловим рыбу
+nous pêchons — мы ловим рыбу
+vous pêchez — вы ловите рыбу
+ils pêchent — они (м.) ловят рыбу
+elles pêchent — они (ж.) ловят рыбу
+
+rougir — краснеть
+je rougis — я краснею
+tu rougis — ты краснеешь
+il rougit — он краснеет
+elle rougit — она краснеет
+on rougit — мы (неформ.) краснеем
+nous rougissons — мы краснеем
+vous rougissez — вы краснеете
+ils rougissent — они (м.) краснеют
+elles rougissent — они (ж.) краснеют
+
+tousser — кашлять
+je tousse — я кашляю
+tu tousses — ты кашляешь
+il tousse — он кашляет
+elle tousse — она кашляет
+on tousse — мы (неформ.) кашляем
+nous toussons — мы кашляем
+vous toussez — вы кашляете
+ils toussent — они (м.) кашляют
+elles toussent — они (ж.) кашляют
+
+pleurer — плакать
+je pleure — я плачу
+tu pleures — ты плачешь
+il pleure — он плачет
+elle pleure — она плачет
+on pleure — мы (неформ.) плачем
+nous pleurons — мы плачем
+vous pleurez — вы плачете
+ils pleurent — они (м.) плачут
+elles pleurent — они (ж.) плачут
