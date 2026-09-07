@@ -1,6 +1,6 @@
 /* ConjuMaster service worker — офлайн-режим для PWA.
    При изменении файлов приложения подними версию CACHE. */
-const CACHE = "conjumaster-v12";
+const CACHE = "conjumaster-v13";
 const ASSETS = [
   "./", "./index.html", "./styles.css", "./app.js", "./data.js",
   "./favicon.svg", "./manifest.json", "./icon-192.png", "./icon-512.png",

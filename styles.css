@@ -25,8 +25,10 @@ body{
 .brand h1,.subtitle{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
 .top-actions{margin-left:auto; flex-shrink:0; display:flex; gap:8px; align-items:center}
 .top-actions .btn{padding:6px 14px; font-size:13px; border-radius:999px}
-#btnHelp{background:linear-gradient(135deg,#38bdf8,var(--blue)); border-color:transparent; color:#fff}
-#btnHelp:hover{filter:brightness(1.07)}
+#btnHelp{background:rgba(14,165,233,.07); border-color:rgba(14,165,233,.28); color:var(--ink)}
+#btnHelp:hover{background:rgba(14,165,233,.14); filter:none}
+#btnHelp .qmark{color:var(--blue); font-weight:800; font-size:15px}
+#viewHelp .row{margin-top:18px}
 .logo{
   width:46px; height:46px; border-radius:14px; display:grid; place-items:center; overflow:hidden; flex-shrink:0;
   background:linear-gradient(135deg,var(--green),var(--blue)); box-shadow:0 4px 14px rgba(16,185,129,.35);

@@ -472,7 +472,7 @@ $("btnAgain").onclick = () => startSession({});
 $("btnReviewHard").onclick = () => startSession({ onlyDifficult: true });
 $("btnToHome").onclick = goHome;
 $("btnHome").onclick = goHome;
-$("btnHelp").onclick = showHelp;
+$("btnHelp").onclick = () => { $("viewHelp").hidden ? showHelp() : goBack(); }; // повторный клик закрывает
 $("btnHelpBack").onclick = goBack;
 $("card").addEventListener("click", (e) => {
   if (e.target.closest(".grade-btns") || e.target.closest("#hintBtn")) return;
