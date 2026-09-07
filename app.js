@@ -427,6 +427,23 @@ function renderVerbs(filter) {
 
 function updateSessionPill() { $("sessionPill").textContent = "Сессия " + store.session; }
 
+// ---------- справка ----------
+let helpReturn = "home";
+function showHelp() {
+  helpReturn = !$("viewTrain").hidden ? "train" : (!$("viewDone").hidden ? "done" : "home");
+  ["viewHome", "viewTrain", "viewDone"].forEach((id) => { $(id).hidden = true; });
+  $("viewHelp").hidden = false;
+  window.scrollTo(0, 0);
+}
+function goBack() {
+  $("viewHelp").hidden = true;
+  if (helpReturn === "train" || helpReturn === "done") {
+    $(helpReturn === "train" ? "viewTrain" : "viewDone").hidden = false; // тренировка/итог живы — состояние не теряем
+  } else {
+    goHome();
+  }
+}
+
 // Сводка сохранённых данных для раздела "Данные"
 function renderStorageInfo() {
   const el = $("storageInfo");
@@ -444,7 +461,7 @@ function renderStorageInfo() {
   }
 }
 function goHome() {
-  $("viewTrain").hidden = true; $("viewDone").hidden = true; $("viewHome").hidden = false;
+  $("viewTrain").hidden = true; $("viewDone").hidden = true; $("viewHelp").hidden = true; $("viewHome").hidden = false;
   $("btnHome").hidden = true;
   renderStats(); renderVerbs($("verbSearch").value);
 }
@@ -455,14 +472,17 @@ $("btnAgain").onclick = () => startSession({});
 $("btnReviewHard").onclick = () => startSession({ onlyDifficult: true });
 $("btnToHome").onclick = goHome;
 $("btnHome").onclick = goHome;
+$("btnHelp").onclick = showHelp;
+$("btnHelpBack").onclick = goBack;
 $("card").addEventListener("click", (e) => {
   if (e.target.closest(".grade-btns") || e.target.closest("#hintBtn")) return;
   flipped ? unflip() : flip(); // клик — туда-обратно, как пробел
 });
 // Горячие клавиши — на уровне документа, чтобы работали без клика по карточке
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") { // Esc — вернуться на главную (из тренировки или итогов)
-    if (!$("viewTrain").hidden || !$("viewDone").hidden) goHome();
+  if (e.key === "Escape") { // Esc — назад (из справки) или на главную (из тренировки/итогов)
+    if (!$("viewHelp").hidden) goBack();
+    else if (!$("viewTrain").hidden || !$("viewDone").hidden) goHome();
     return;
   }
   const tag = (document.activeElement && document.activeElement.tagName) || "";

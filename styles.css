@@ -84,6 +84,9 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .grid2{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:18px}
 .panel{background:rgba(255,255,255,.9); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px; margin-bottom:18px; box-shadow:0 4px 18px rgba(15,42,58,.05)}
 .panel h3{margin:0 0 12px}
+.panel h4{margin:16px 0 6px}
+.help-list{margin:6px 0; padding-left:22px; color:#33566a}
+.help-list li{margin:7px 0}
 .muted{color:var(--muted); font-weight:400; font-size:14px}
 .muted-small{color:var(--muted); font-size:12px}
 .legend{font-size:12.5px; color:var(--muted)}
