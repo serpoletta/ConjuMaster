@@ -457,7 +457,7 @@ $("btnToHome").onclick = goHome;
 $("btnHome").onclick = goHome;
 $("card").addEventListener("click", (e) => {
   if (e.target.closest(".grade-btns") || e.target.closest("#hintBtn")) return;
-  flip();
+  flipped ? unflip() : flip(); // клик — туда-обратно, как пробел
 });
 // Горячие клавиши — на уровне документа, чтобы работали без клика по карточке
 document.addEventListener("keydown", (e) => {
@@ -465,9 +465,13 @@ document.addEventListener("keydown", (e) => {
     if (!$("viewTrain").hidden || !$("viewDone").hidden) goHome();
     return;
   }
-  if ($("viewTrain").hidden) return; // только на экране тренировки
   const tag = (document.activeElement && document.activeElement.tagName) || "";
   if (/^(INPUT|TEXTAREA|SELECT)$/.test(tag)) return; // не мешаем вводу текста
+  if (!$("viewHome").hidden) { // главный экран: Enter — старт тренировки
+    if (e.key === "Enter") startSession({});
+    return;
+  }
+  if ($("viewTrain").hidden) return; // дальше — только экран тренировки
   if (e.key === " ") { e.preventDefault(); flipped ? unflip() : flip(); } // пробел — туда-обратно
   else if (e.key === "Enter") { e.preventDefault(); flip(); }
   if (!flipped) return;
