@@ -384,6 +384,9 @@ function renderCal() {
   while (countOf(t) > 0) { streak++; t.setDate(t.getDate() - 1); }
   $("calTotal").textContent = "Повторений за год: " + total;
   $("calStreak").textContent = "🔥 Серия: " + streak + " " + plural(streak, "день", "дня", "дней");
+  // по умолчанию показываем правую (самую новую) часть календаря
+  const wrap = $("calGrid").parentNode;
+  if (wrap) wrap.scrollLeft = wrap.scrollWidth;
 }
 
 function renderVerbs(filter) {
