@@ -89,6 +89,7 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .cal-legend .cal-day{display:inline-block}
 
 .grid2{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:18px}
+.grid2 > .panel{margin-bottom:0}
 .panel{background:rgba(255,255,255,.9); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px; margin-bottom:18px; box-shadow:0 4px 18px rgba(15,42,58,.05)}
 .panel h3{margin:0 0 12px}
 .panel h4{margin:16px 0 6px}
