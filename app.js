@@ -169,6 +169,13 @@ function startSession(opts) {
     while (ids.length < SESSION_SIZE) ids = ids.concat(ids);
     ids = ids.slice(0, SESSION_SIZE);
     trainTitle = "📖 " + v.inf;
+  } else if (opts.pron != null) {
+    const list = CARDS.filter((c) => c.key.split("#")[0] === opts.pron);
+    if (!list.length) return;
+    ids = list.map((c) => c.id);
+    while (ids.length < SESSION_SIZE) ids = ids.concat(ids);
+    ids = ids.slice(0, SESSION_SIZE);
+    trainTitle = "🎯 " + opts.pron + " — все глаголы";
   } else {
     trainTitle = "🎲 Смешанная";
   }
@@ -327,6 +334,30 @@ function renderStats() {
   $("footCount").textContent = VERB_DATA.length + " глаголов · " + CARDS.length + " форм";
   renderStorageInfo();
   renderCal();
+  renderProns();
+}
+
+// ---------- тренировка по лицам ----------
+const PRON_RU = { je: "я", tu: "ты", il: "он", elle: "она", on: "on", nous: "мы", vous: "вы", ils: "они (м.)", elles: "они (ж.)" };
+const PRON_ORDER = ["je", "tu", "il", "elle", "on", "nous", "vous", "ils", "elles"];
+function renderProns() {
+  const box = $("pronList");
+  if (!box) return;
+  box.innerHTML = "";
+  PRON_ORDER.forEach((p) => {
+    const cards = CARDS.filter((c) => c.key.split("#")[0] === p);
+    if (!cards.length) return;
+    let learned = 0;
+    cards.forEach((c) => { if (statusOf(st(c.id)) === "learned") learned++; });
+    const b = document.createElement("button");
+    b.className = "btn btn-soft pron-btn";
+    b.innerHTML = "<b></b><span></span><small></small>";
+    b.children[0].textContent = p;
+    b.children[1].textContent = PRON_RU[p];
+    b.children[2].textContent = learned + "/" + cards.length;
+    b.onclick = () => startSession({ pron: p });
+    box.appendChild(b);
+  });
 }
 
 // ---------- календарь активности за год ----------

@@ -108,6 +108,11 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .verbs-head{display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap}
 .search{border:1.5px solid var(--line); border-radius:12px; padding:9px 12px; font-size:14px; min-width:240px; background:#f8fdfb}
 .verb-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:10px; margin-top:12px; max-height:420px; overflow:auto}
+.pron-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); gap:10px; margin-top:12px}
+.pron-btn{display:grid; gap:2px; justify-items:center; text-align:center}
+.pron-btn b{font-size:17px; color:var(--blue-dark)}
+.pron-btn span{font-size:13px; color:var(--muted)}
+.pron-btn small{font-size:12px; color:var(--green-dark); font-weight:700}
 .verb-item{border:1.5px solid var(--line); border-radius:14px; padding:10px 12px; background:#fbfefe}
 .verb-item .vi-top{display:flex; gap:8px; align-items:baseline}
 .verb-item .vi-inf{font-weight:800; color:var(--blue-dark)}
