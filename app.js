@@ -110,9 +110,15 @@ function pickSession(n, onlyIds) {
   let items = pool.map((c) => {
     const s = st(c.id);
     const status = statusOf(s);
-    return { c, w: onlyIds ? 1 : weightOf(s, status), status };
+    return { c, w: weightOf(s, status), status };
   }).filter((x) => x.w > 0);
-  if (!items.length) items = pool.map((c) => ({ c, w: 1, status: "new" }));
+  // Веса действуют везде, включая drill-режимы (лицо/глагол/трудные):
+  // трудное выпадает чаще, выученное не к сроку — пропускается.
+  // Если взвешенных карт меньше, чем нужно (или нет вовсе), добиваем
+  // равномерной выборкой из всего пула, чтобы тренировка всегда была полной.
+  if (!items.length || (onlyIds && items.length < n)) {
+    items = pool.map((c) => ({ c, w: 1, status: "new" }));
+  }
 
   // разнообразие: сначала не больше 2 карт одного глагола
   const picked = [];
