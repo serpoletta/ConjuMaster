@@ -172,9 +172,7 @@ function startSession(opts) {
   } else if (opts.pron != null) {
     const list = CARDS.filter((c) => c.key.split("#")[0] === opts.pron);
     if (!list.length) return;
-    ids = list.map((c) => c.id);
-    while (ids.length < SESSION_SIZE) ids = ids.concat(ids);
-    ids = ids.slice(0, SESSION_SIZE);
+    ids = list.map((c) => c.id); // весь пул лица (~242) — случайные 10 выберет pickSession
     trainTitle = "🎯 " + opts.pron + " — все глаголы";
   } else {
     trainTitle = "🎲 Смешанная";
