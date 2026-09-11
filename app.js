@@ -247,8 +247,8 @@ function grade(g) {
     s.due = store.session; // неверное — как можно скорее
     sessBad++;
     sessGrades.push({ id: c.id, grade: g });
-    // вернуть в эту же тренировку ещё раз (макс. +4 повтора за сессию)
-    if (requeues < 4) {
+    // вернуть в эту же тренировку ещё раз (макс. +3 повтора за сессию)
+    if (requeues < 3) {
       queue.splice(Math.min(pos + 3, queue.length), 0, c);
       requeues++;
       $("requeueNote").hidden = false;
@@ -270,13 +270,13 @@ function finishSession() {
   $("dGood").textContent = sessGood; $("dMid").textContent = sessMid; $("dBad").textContent = sessBad;
   const box = $("doneMistakes");
   box.innerHTML = "";
-  const bads = sessGrades.filter((x) => x.grade === "bad").slice(-8);
-  if (bads.length) {
+  const badIds = [...new Set(sessGrades.filter((x) => x.grade === "bad").map((x) => x.id))].slice(-8); // без дублей
+  if (badIds.length) {
     const h = document.createElement("p");
     h.className = "muted-small"; h.textContent = "Повтори эти формы:";
     box.appendChild(h);
-    bads.forEach((g) => {
-      const c = cardById[g.id];
+    badIds.forEach((id) => {
+      const c = cardById[id];
       const d = document.createElement("div");
       d.className = "mistake";
       d.innerHTML = "<span></span><b></b>";
