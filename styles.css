@@ -125,6 +125,9 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .write-fix{padding:10px 12px; border:2px solid var(--good); border-radius:12px; font-size:16px; background:#f0fdf4; color:var(--ink)}
 .write-fix .was{color:var(--bad); text-decoration:line-through; font-size:13.5px; margin-right:6px}
 .write-fix .now{color:#065f46; font-weight:800}
+#btnNextVerb:focus{outline:none; border:2px solid transparent; border-radius:14px;
+  background:linear-gradient(#fff,#fff) padding-box, linear-gradient(135deg,var(--green),var(--blue)) border-box;
+  box-shadow:0 0 0 4px rgba(14,165,233,.18)}
 .accent-bar{display:flex; gap:6px; flex-wrap:wrap; margin:10px 0}
 .write-head{margin:0 0 2px; font-size:19px}
 .write-top{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap}
