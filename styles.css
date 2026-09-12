@@ -124,6 +124,10 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .write-row.bad input{border-color:var(--bad); background:#fef2f2}
 .write-correct{grid-column:2; font-size:13px; color:var(--green-dark); margin-top:-4px}
 .accent-bar{display:flex; gap:6px; flex-wrap:wrap; margin:10px 0}
+.write-head{margin:0 0 2px; font-size:19px}
+.write-head-row{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
+.write-head-row h3{margin:0}
+.write-head-row .accent-bar{margin:0; justify-content:flex-end}
 .accent-bar button{border:1.5px solid var(--line); background:#f8fdfb; border-radius:10px; padding:6px 11px; font-size:16px; cursor:pointer; color:var(--ink)}
 .accent-bar button:hover{border-color:var(--blue); background:#f0f9ff}
 .write-actions{margin-top:14px}

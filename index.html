@@ -190,11 +190,14 @@
   <!-- ============ ПИСЬМЕННАЯ ТРЕНИРОВКА ============ -->
   <section id="viewWrite" hidden>
     <div class="train-top">
-      <div class="train-meta"><span id="writeTitle"></span><span id="writeScore" class="pill pill-soft" hidden></span></div>
+      <h3 class="write-head" id="writeTitle"></h3>
+      <div class="train-meta"><span id="writeCounter"></span><span id="writeScore" class="pill pill-soft" hidden></span></div>
     </div>
     <div class="panel">
-      <h3 id="writeVerb"></h3>
-      <div class="accent-bar" id="accentBar" title="Вставка букв с диакритикой"></div>
+      <div class="write-head-row">
+        <h3 id="writeVerb"></h3>
+        <div class="accent-bar" id="accentBar" title="Вставка букв с диакритикой"></div>
+      </div>
       <div id="writeRows"></div>
       <div class="row write-actions">
         <button class="btn btn-primary" id="btnCheck">Проверить</button>
