@@ -6,7 +6,7 @@
 "use strict";
 
 const LS_KEY = "conjumaster_v1";
-const APP_VERSION = "1.26"; // = номер CACHE в sw.js (conjumaster-v26); первый релиз — 1.0
+const APP_VERSION = "1.27"; // = номер CACHE в sw.js (conjumaster-v27); первый релиз — 1.0
 const SESSION_SIZE = 10;
 const LEARN_STREAK = 3;   // сколько подряд "верно" нужно для выучивания
 const HARD_FAILS = 3;     // сколько ошибок делает форму трудной
@@ -339,7 +339,8 @@ function renderGroups() {
   });
 }
 
-let writeGroup = null, writeVerb = -1, writeChecked = false;
+let writeGroup = null, writeVerb = -1, writeChecked = false, writeNum = 1;
+const WRITE_SIZE = 5; // глаголов в одной письменной тренировке
 const ACCENTS = ["é", "è", "ê", "ë", "à", "â", "ç", "î", "ï", "ô", "û", "ù"];
 function normAns(s) {
   return (s || "").toLowerCase().trim().replace(/[’‘`´]/g, "'").replace(/\s+/g, " ").replace(/[.]+$/, "");
@@ -364,6 +365,7 @@ function buildAccentBar() {
 }
 function startWrite(g) {
   writeGroup = g;
+  writeNum = 1;
   buildAccentBar();
   pickWriteVerb();
   ["viewHome", "viewTrain", "viewDone", "viewHelp"].forEach((id) => { $(id).hidden = true; });
@@ -378,7 +380,7 @@ function pickWriteVerb() {
   writeVerb = i;
   writeChecked = false;
   const v = VERB_DATA[i];
-  $("writeTitle").textContent = GROUP_NAMES[writeGroup];
+  $("writeTitle").textContent = GROUP_NAMES[writeGroup] + " · глагол " + writeNum + "/" + WRITE_SIZE;
   $("writeScore").hidden = true;
   $("writeVerb").innerHTML = "";
   $("writeVerb").appendChild(document.createTextNode(v.inf + " "));
@@ -430,6 +432,7 @@ function checkWrite() {
   sc.textContent = good + "/" + total;
   $("btnCheck").hidden = true;
   $("btnNextVerb").hidden = false;
+  $("btnNextVerb").focus(); // Enter после проверки даст следующий глагол
   renderStats(); renderVerbs(); renderProns(); renderGroups();
 }
 
@@ -653,7 +656,10 @@ $("btnHome").onclick = goHome;
 $("btnHelp").onclick = () => { $("viewHelp").hidden ? showHelp() : goBack(); }; // повторный клик закрывает
 $("btnHelpBack").onclick = goBack;
 $("btnCheck").onclick = checkWrite;
-$("btnNextVerb").onclick = pickWriteVerb;
+$("btnNextVerb").onclick = () => {
+  writeNum = writeNum >= WRITE_SIZE ? 1 : writeNum + 1; // батчи по 5: прогресс виден, поток не рвётся
+  pickWriteVerb();
+};
 $("writeRows").addEventListener("keydown", (e) => {
   if (e.key !== "Enter" || writeChecked) return;
   e.preventDefault();
