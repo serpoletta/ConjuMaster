@@ -189,9 +189,9 @@
 
   <!-- ============ ПИСЬМЕННАЯ ТРЕНИРОВКА ============ -->
   <section id="viewWrite" hidden>
-    <div class="train-top">
+    <div class="train-top write-top">
       <h3 class="write-head" id="writeTitle"></h3>
-      <div class="train-meta"><span id="writeCounter"></span><span id="writeScore" class="pill pill-soft" hidden></span></div>
+      <span id="writeCounter" class="pill pill-soft"></span>
     </div>
     <div class="panel">
       <div class="write-head-row">
@@ -199,9 +199,12 @@
         <div class="accent-bar" id="accentBar" title="Вставка букв с диакритикой"></div>
       </div>
       <div id="writeRows"></div>
-      <div class="row write-actions">
-        <button class="btn btn-primary" id="btnCheck">Проверить</button>
-        <button class="btn btn-soft" id="btnNextVerb" hidden>Следующий глагол →</button>
+      <div class="write-actions">
+        <span id="writeScore" class="write-score" hidden></span>
+        <div class="write-btns">
+          <button class="btn btn-primary" id="btnCheck">Проверить</button>
+          <button class="btn btn-soft" id="btnNextVerb" hidden>Следующий глагол →</button>
+        </div>
       </div>
       <p class="muted-small">Впиши полную форму с местоимением (например: tu vas). Ошибки тоже идут в статистику повторений.</p>
     </div>
