@@ -35,19 +35,20 @@ const cardById = Object.fromEntries(CARDS.map((c) => [c.id, c]));
 function blankState() { return { seen: 0, good: 0, mid: 0, bad: 0, streak: 0, due: 0 }; }
 let store = { progress: {}, session: 0, answers: 0, days: {} };
 
+function applyStore(s) {
+  if (!s || typeof s !== "object") return;
+  store.progress = (s.progress && typeof s.progress === "object") ? s.progress : {};
+  store.session = s.session || 0;
+  store.answers = s.answers || 0;
+  store.days = (s.days && typeof s.days === "object") ? s.days : {};
+  sanitizeDays();
+  migrateProgress();
+}
 function load() {
   try {
     const raw = localStorage.getItem(LS_KEY);
     if (!raw) return;
-    const s = JSON.parse(raw);
-    if (s && typeof s === "object") {
-      store.progress = s.progress || {};
-      store.session = s.session || 0;
-      store.answers = s.answers || 0;
-      store.days = (s.days && typeof s.days === "object") ? s.days : {};
-      sanitizeDays(); // отбрасываем старый формат (число сессий за день)
-      migrateProgress(); // одноразовый перевод числовых id на стабильные
-    }
+    applyStore(JSON.parse(raw));
   } catch (e) { console.warn("localStorage недоступен", e); }
 }
 // days: дата -> число повторений (ответов) в этот день.
@@ -65,6 +66,12 @@ function save() {
 function st(id) {
   if (!store.progress[id]) store.progress[id] = blankState();
   return store.progress[id];
+}
+// Чтение без побочек: не создаёт записи в store (иначе один отбор сессии
+// раздул бы localStorage нулевыми записями по всем 2181 формам).
+const _blank = () => ({ seen: 0, good: 0, mid: 0, bad: 0, streak: 0, due: 0 });
+function gs(id) {
+  return store.progress[id] || _blank();
 }
 // Порядок глаголов в СТАРОМ файле (top200verbsfr.txt) — для одноразовой миграции
 // прогресса со числовых id ("12:tu") на стабильные ("faire:tu").
@@ -107,17 +114,13 @@ function weightOf(s, status) {
 function pickSession(n, onlyIds) {
   const pool = onlyIds ? onlyIds.map((id) => cardById[id]).filter(Boolean) : CARDS.slice();
   // если тренируем трудные, а их нет — берём обычные
-  let items = pool.map((c) => {
-    const s = st(c.id);
-    const status = statusOf(s);
-    return { c, w: weightOf(s, status), status };
-  }).filter((x) => x.w > 0);
+  let items = pool.map((c) => ({ c, w: weightOf(gs(c.id), statusOf(gs(c.id))) })).filter((x) => x.w > 0);
   // Веса действуют везде, включая drill-режимы (лицо/глагол/трудные):
   // трудное выпадает чаще, выученное не к сроку — пропускается.
   // Если взвешенных карт меньше, чем нужно (или нет вовсе), добиваем
   // равномерной выборкой из всего пула, чтобы тренировка всегда была полной.
   if (!items.length || (onlyIds && items.length < n)) {
-    items = pool.map((c) => ({ c, w: 1, status: "new" }));
+    items = pool.map((c) => ({ c, w: 1 }));
   }
 
   // разнообразие: сначала не больше 2 карт одного глагола
@@ -138,7 +141,7 @@ function pickSession(n, onlyIds) {
         const alt = items.findIndex((x) => (perVerb[x.c.verb] || 0) < maxPerVerb);
         if (alt === -1) return; // все забиты — выходим, доберём ниже
         const it2 = items.splice(alt, 1)[0];
-        picked.push(it2.c); perVerb[v] = (perVerb[v] || 0) + 0; perVerb[it2.c.verb] = (perVerb[it2.c.verb] || 0) + 1;
+        picked.push(it2.c); perVerb[it2.c.verb] = (perVerb[it2.c.verb] || 0) + 1;
       } else {
         items.splice(idx, 1);
         picked.push(it.c); perVerb[v] = (perVerb[v] || 0) + 1;
@@ -156,7 +159,7 @@ function pickSession(n, onlyIds) {
 }
 
 // ---------- состояние тренировки ----------
-let queue = [], pos = 0, flipped = false;
+let queue = [], pos = 0, flipped = false, advancing = false; // advancing закрывает race на повторный грейд
 let sessGood = 0, sessMid = 0, sessBad = 0, requeues = 0;
 let sessGrades = []; // {id, grade}
 let trainTitle = "";
@@ -165,7 +168,7 @@ function startSession(opts) {
   opts = opts || {};
   let ids = null;
   if (opts.onlyDifficult) {
-    ids = CARDS.filter((c) => statusOf(st(c.id)) === "difficult").map((c) => c.id);
+    ids = CARDS.filter((c) => statusOf(gs(c.id)) === "difficult").map((c) => c.id);
     if (!ids.length) { alert("Трудных форм пока нет — начни обычную тренировку!"); return; }
     trainTitle = "🔥 Трудные";
   } else if (opts.verb != null) {
@@ -198,7 +201,7 @@ function startSession(opts) {
 function renderCard() {
   const c = queue[pos];
   if (!c) return finishSession();
-  flipped = false;
+  flipped = false; advancing = false;
   $("trainPos").textContent = (pos + 1) + " / " + queue.length;
   $("trainBar").style.width = (pos / queue.length * 100) + "%";
   $("cardRu").textContent = c.ru;
@@ -226,10 +229,11 @@ function unflip() {
 }
 
 function grade(g) {
-  if (!flipped) return;
+  if (!flipped || advancing) return;
   const c = queue[pos];
   const s = st(c.id);
   s.seen += 1; store.answers += 1;
+  sessGrades.push({ id: c.id, grade: g });
   // фиксируем повторение сразу — засчитывается каждое, даже если тренировку прервут
   if (!store.days || typeof store.days !== "object") store.days = {};
   const dk = dayKey(new Date());
@@ -246,18 +250,17 @@ function grade(g) {
     s.bad += 1; s.streak = 0;
     s.due = store.session; // неверное — как можно скорее
     sessBad++;
-    sessGrades.push({ id: c.id, grade: g });
     // вернуть в эту же тренировку ещё раз (макс. +3 повтора за сессию)
     if (requeues < 3) {
       queue.splice(Math.min(pos + 3, queue.length), 0, c);
       requeues++;
       $("requeueNote").hidden = false;
+      advancing = true; // следующий грейд — только после перехода к новой карточке
       setTimeout(() => { if (queue[pos + 1]) { pos++; renderCard(); } else finishSession(); }, 650);
       save();
       return;
     }
   }
-  sessGrades.push({ id: c.id, grade: g });
   save();
   pos++;
   if (pos >= queue.length) finishSession();
@@ -295,14 +298,14 @@ function finishSession() {
 // ---------- статистика ----------
 function formStats() {
   const r = { new: 0, learning: 0, learned: 0, difficult: 0 };
-  CARDS.forEach((c) => { r[statusOf(st(c.id))]++; });
+  CARDS.forEach((c) => { r[statusOf(gs(c.id))]++; });
   return r;
 }
 function verbStatus(vi) {
   const v = VERB_DATA[vi];
   let seenAny = false, allLearned = true, hasHard = false;
   for (const f of v.forms) {
-    const s = statusOf(st(v.inf + ":" + f.key));
+    const s = statusOf(gs(v.inf + ":" + f.key));
     if (s !== "new") seenAny = true;
     if (s !== "learned") allLearned = false;
     if (s === "difficult") hasHard = true;
@@ -352,7 +355,7 @@ function renderProns() {
     const cards = CARDS.filter((c) => c.key.split("#")[0] === p);
     if (!cards.length) return;
     let learned = 0;
-    cards.forEach((c) => { if (statusOf(st(c.id)) === "learned") learned++; });
+    cards.forEach((c) => { if (statusOf(gs(c.id)) === "learned") learned++; });
     const b = document.createElement("button");
     b.className = "btn btn-soft pron-btn";
     b.innerHTML = "<b></b><span></span><small></small>";
@@ -438,7 +441,7 @@ function renderVerbs(filter) {
   VERB_DATA.forEach((v, i) => {
     if (q && !(v.inf.toLowerCase().includes(q) || v.ru.toLowerCase().includes(q))) return;
     let learned = 0;
-    v.forms.forEach((fm) => { if (statusOf(st(v.inf + ":" + fm.key)) === "learned") learned++; });
+    v.forms.forEach((fm) => { if (statusOf(gs(v.inf + ":" + fm.key)) === "learned") learned++; });
     const s = verbStatus(i);
     const el = document.createElement("div");
     el.className = "verb-item";
@@ -563,9 +566,7 @@ $("fileImport").addEventListener("change", (e) => {
     try {
       const s = JSON.parse(r.result);
       if (s && typeof s === "object") {
-        store.progress = s.progress || {}; store.session = s.session || 0; store.answers = s.answers || 0;
-        store.days = (s.days && typeof s.days === "object") ? s.days : {};
-        sanitizeDays();
+        applyStore(s);
         save(); renderStats(); renderVerbs(); updateSessionPill();
         alert("Прогресс импортирован!");
       }

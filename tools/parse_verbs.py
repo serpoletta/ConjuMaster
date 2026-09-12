@@ -6,7 +6,7 @@
   <fr форма с местоимением> — <ru перевод>
 Блоки разделены пустой строкой. Поддерживает дефектные глаголы (falloir/il faut).
 """
-import io, json, re
+import io, json
 
 # Запускать из корня репозитория: python3 tools/parse_verbs.py
 SRC = "data/top245verbsfr.txt"

@@ -169,7 +169,6 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .done-num.good span{color:var(--good)} .done-num.mid span{color:var(--mid)} .done-num.bad span{color:var(--bad)}
 .mistake{display:flex; justify-content:space-between; gap:8px; background:#fef2f2; border:1px solid #fecaca; padding:8px 12px; border-radius:12px; margin:6px 0; font-size:14px}
 .mistake > *{min-width:0; overflow-wrap:anywhere}
-.mistake.ok{background:#f0fdf4; border-color:#bbf7d0}
 
 .footer{text-align:center; color:var(--muted); font-size:13px; padding:20px}
 
