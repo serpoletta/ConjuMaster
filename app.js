@@ -6,6 +6,7 @@
 "use strict";
 
 const LS_KEY = "conjumaster_v1";
+const APP_VERSION = "1.23"; // = номер CACHE в sw.js (conjumaster-v23); первый релиз — 1.0
 const SESSION_SIZE = 10;
 const LEARN_STREAK = 3;   // сколько подряд "верно" нужно для выучивания
 const HARD_FAILS = 3;     // сколько ошибок делает форму трудной
@@ -339,6 +340,7 @@ function renderStats() {
   $("vbarHard").style.width = (vs.hard / vt * 100) + "%";
   $("verbsTotal").textContent = "· " + VERB_DATA.length;
   $("footCount").textContent = VERB_DATA.length + " глаголов · " + CARDS.length + " форм";
+  $("appVersion").textContent = "v" + APP_VERSION;
   renderStorageInfo();
   renderCal();
   renderProns();
