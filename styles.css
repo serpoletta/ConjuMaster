@@ -134,8 +134,9 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .accent-bar button{border:1.5px solid var(--line); background:#f8fdfb; border-radius:10px; padding:6px 11px; font-size:16px; cursor:pointer; color:var(--ink)}
 .accent-bar button:hover{border-color:var(--blue); background:#f0f9ff}
 .write-actions{display:grid; grid-template-columns:1fr 1.4fr; gap:10px; margin-top:14px}
-.write-btns{grid-column:2; justify-self:end; display:flex; gap:10px}
-.write-score{grid-column:2; font-weight:800; font-size:18px; color:var(--green-dark); min-height:24px}
+.write-bottom{grid-column:2; display:flex; justify-content:space-between; align-items:center; gap:10px}
+.write-btns{display:flex; gap:10px; margin-left:auto}
+.write-score{font-weight:800; font-size:18px; color:var(--green-dark); min-height:24px}
 .write-score.ghost{visibility:hidden}
 .verb-item{border:1.5px solid var(--line); border-radius:14px; padding:10px 12px; background:#fbfefe}
 .verb-item .vi-top{display:flex; gap:8px; align-items:baseline}
@@ -216,5 +217,5 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
   .write-row{grid-template-columns:1fr}
   .write-correct{grid-column:1}
   .write-actions{grid-template-columns:1fr}
-  .write-score,.write-btns{grid-column:1}
+  .write-bottom{grid-column:1}
 }
