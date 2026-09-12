@@ -122,7 +122,9 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .write-row input:focus{outline:none; border-color:var(--blue)}
 .write-row.ok input{border-color:var(--good); background:#f0fdf4}
 .write-row.bad input{border-color:var(--bad); background:#fef2f2}
-.write-correct{grid-column:2; font-size:13px; color:var(--green-dark); margin-top:-4px}
+.write-fix{padding:10px 12px; border:2px solid var(--good); border-radius:12px; font-size:16px; background:#f0fdf4; color:var(--ink)}
+.write-fix .was{color:var(--bad); text-decoration:line-through; font-size:13.5px; margin-right:6px}
+.write-fix .now{color:#065f46; font-weight:800}
 .accent-bar{display:flex; gap:6px; flex-wrap:wrap; margin:10px 0}
 .write-head{margin:0 0 2px; font-size:19px}
 .write-top{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap}
@@ -215,7 +217,6 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
   .card{padding:56px 14px 24px}
   .grade-btns .btn{flex:1 1 140px}
   .write-row{grid-template-columns:1fr}
-  .write-correct{grid-column:1}
   .write-actions{grid-template-columns:1fr}
   .write-bottom{grid-column:1}
 }

@@ -6,7 +6,7 @@
 "use strict";
 
 const LS_KEY = "conjumaster_v1";
-const APP_VERSION = "1.33"; // = номер CACHE в sw.js (conjumaster-v33); первый релиз — 1.0
+const APP_VERSION = "1.34"; // = номер CACHE в sw.js (conjumaster-v34); первый релиз — 1.0
 const SESSION_SIZE = 10;
 const LEARN_STREAK = 3;   // сколько подряд "верно" нужно для выучивания
 const HARD_FAILS = 3;     // сколько ошибок делает форму трудной
@@ -421,10 +421,17 @@ function checkWrite() {
     row.classList.add(ok ? "ok" : "bad");
     if (ok) { good++; }
     else {
-      const corr = document.createElement("div");
-      corr.className = "write-correct";
-      corr.textContent = "✓ " + card.fr;
-      row.appendChild(corr);
+      // исправление — прямо в поле: старая версия видна, акцент на верной
+      const fix = document.createElement("div");
+      fix.className = "write-fix";
+      const was = document.createElement("span");
+      was.className = "was";
+      was.textContent = inp.value.trim() || "—";
+      const now = document.createElement("b");
+      now.className = "now";
+      now.textContent = card.fr;
+      fix.append(was, document.createTextNode(" → "), now);
+      inp.replaceWith(fix);
     }
     applyGradeState(card.id, ok ? "good" : "bad"); // каждая форма — в общий SRS-прогресс
   }
