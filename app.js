@@ -6,7 +6,7 @@
 "use strict";
 
 const LS_KEY = "conjumaster_v1";
-const APP_VERSION = "1.23"; // = номер CACHE в sw.js (conjumaster-v23); первый релиз — 1.0
+const APP_VERSION = "1.24"; // = номер CACHE в sw.js (conjumaster-v24); первый релиз — 1.0
 const SESSION_SIZE = 10;
 const LEARN_STREAK = 3;   // сколько подряд "верно" нужно для выучивания
 const HARD_FAILS = 3;     // сколько ошибок делает форму трудной
@@ -229,27 +229,37 @@ function unflip() {
   document.querySelector(".face-back").hidden = true;
 }
 
-function grade(g) {
-  if (!flipped || advancing) return;
-  const c = queue[pos];
-  const s = st(c.id);
-  s.seen += 1; store.answers += 1;
-  sessGrades.push({ id: c.id, grade: g });
+function bumpDay() {
   // фиксируем повторение сразу — засчитывается каждое, даже если тренировку прервут
   if (!store.days || typeof store.days !== "object") store.days = {};
   const dk = dayKey(new Date());
   store.days[dk] = (typeof store.days[dk] === "number" ? store.days[dk] : 0) + 1;
+}
+function applyGradeState(id, g) {
+  // единое обновление SRS-состояния (карточки и письменный режим)
+  const s = st(id);
+  s.seen += 1; store.answers += 1;
+  bumpDay();
   if (g === "good") {
     s.good += 1; s.streak += 1;
     s.due = store.session + INTERVALS[Math.min(s.streak, INTERVALS.length - 1)];
-    sessGood++;
   } else if (g === "mid") {
     s.mid += 1; s.streak = 0;
     s.due = store.session + 1; // неуверенное — уже в следующей тренировке
-    sessMid++;
   } else {
     s.bad += 1; s.streak = 0;
     s.due = store.session; // неверное — как можно скорее
+  }
+  return s;
+}
+function grade(g) {
+  if (!flipped || advancing) return;
+  const c = queue[pos];
+  applyGradeState(c.id, g);
+  sessGrades.push({ id: c.id, grade: g });
+  if (g === "good") sessGood++;
+  else if (g === "mid") sessMid++;
+  else {
     sessBad++;
     // вернуть в эту же тренировку ещё раз (макс. +3 повтора за сессию)
     if (requeues < 3) {
@@ -294,6 +304,133 @@ function finishSession() {
     box.appendChild(p);
   }
   renderStats(); renderVerbs(); updateSessionPill();
+}
+
+// ---------- письменные спряжения по группам ----------
+function verbGroup(v) {
+  // I — -er (кроме aller), II — -ir на -issons, III — всё остальное
+  let b = v.inf.replace(/\s*\(se\)\s*$/, "").trim().replace(/^s'/, "").replace(/^se /, "");
+  if (b === "aller") return 3;
+  if (b.endsWith("er")) return 1;
+  if (b.endsWith("ir")) {
+    const nf = v.forms.find((f) => f.key.split("#")[0] === "nous");
+    const last = nf ? nf.fr.split(" ").pop() : "";
+    return last.endsWith("issons") ? 2 : 3;
+  }
+  return 3;
+}
+const GROUP_NAMES = { 1: "I группа · -er", 2: "II группа · -ir", 3: "III группа · неправильные" };
+function renderGroups() {
+  const box = $("groupList");
+  if (!box) return;
+  box.innerHTML = "";
+  [1, 2, 3].forEach((g) => {
+    const verbs = VERB_DATA.map((v, i) => i).filter((i) => verbGroup(VERB_DATA[i]) === g);
+    if (!verbs.length) return;
+    const learned = verbs.filter((i) => verbStatus(i) === "learned").length;
+    const b = document.createElement("button");
+    b.className = "btn btn-soft pron-btn";
+    b.innerHTML = "<b></b><span></span><small></small>";
+    b.children[0].textContent = GROUP_NAMES[g];
+    b.children[1].textContent = verbs.length + " глаг.";
+    b.children[2].textContent = learned + "/" + verbs.length;
+    b.onclick = () => startWrite(g);
+    box.appendChild(b);
+  });
+}
+
+let writeGroup = null, writeVerb = -1, writeChecked = false;
+const ACCENTS = ["é", "è", "ê", "ë", "à", "â", "ç", "î", "ï", "ô", "û", "ù"];
+function normAns(s) {
+  return (s || "").toLowerCase().trim().replace(/[’‘`´]/g, "'").replace(/\s+/g, " ").replace(/[.]+$/, "");
+}
+function buildAccentBar() {
+  const bar = $("accentBar");
+  bar.innerHTML = "";
+  ACCENTS.forEach((ch) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = ch; b.title = "Вставить " + ch;
+    b.addEventListener("mousedown", (e) => e.preventDefault()); // не уводить фокус из поля
+    b.addEventListener("click", () => {
+      const t = document.activeElement;
+      if (!t || t.tagName !== "INPUT" || !t.classList.contains("write-input")) return;
+      const s = t.selectionStart || t.value.length, e = t.selectionEnd || t.value.length;
+      t.value = t.value.slice(0, s) + ch + t.value.slice(e);
+      t.focus();
+      t.setSelectionRange(s + 1, s + 1);
+    });
+    bar.appendChild(b);
+  });
+}
+function startWrite(g) {
+  writeGroup = g;
+  buildAccentBar();
+  pickWriteVerb();
+  ["viewHome", "viewTrain", "viewDone", "viewHelp"].forEach((id) => { $(id).hidden = true; });
+  $("viewWrite").hidden = false;
+  $("btnHome").hidden = false;
+  window.scrollTo(0, 0);
+}
+function pickWriteVerb() {
+  const pool = VERB_DATA.map((v, i) => i).filter((i) => verbGroup(VERB_DATA[i]) === writeGroup);
+  let i = pool[Math.floor(Math.random() * pool.length)];
+  if (pool.length > 1) { while (i === writeVerb) i = pool[Math.floor(Math.random() * pool.length)]; }
+  writeVerb = i;
+  writeChecked = false;
+  const v = VERB_DATA[i];
+  $("writeTitle").textContent = GROUP_NAMES[writeGroup];
+  $("writeScore").hidden = true;
+  $("writeVerb").innerHTML = "";
+  $("writeVerb").appendChild(document.createTextNode(v.inf + " "));
+  const small = document.createElement("span");
+  small.className = "muted"; small.textContent = "— " + v.ru;
+  $("writeVerb").appendChild(small);
+  const rows = $("writeRows");
+  rows.innerHTML = "";
+  v.forms.forEach((f) => {
+    const row = document.createElement("div");
+    row.className = "write-row";
+    row.dataset.card = v.inf + ":" + f.key;
+    const lab = document.createElement("label");
+    lab.textContent = f.ru;
+    const inp = document.createElement("input");
+    inp.className = "write-input"; inp.autocomplete = "off"; inp.placeholder = "…";
+    row.appendChild(lab); row.appendChild(inp);
+    rows.appendChild(row);
+  });
+  $("btnCheck").hidden = false;
+  $("btnNextVerb").hidden = true;
+  const first = rows.querySelector("input");
+  if (first) first.focus();
+}
+function checkWrite() {
+  if (writeChecked) return;
+  writeChecked = true;
+  let good = 0;
+  const rows = $("writeRows").children;
+  for (const row of rows) {
+    const card = cardById[row.dataset.card];
+    const inp = row.querySelector("input");
+    const ok = normAns(inp.value) === normAns(card.fr);
+    inp.disabled = true;
+    row.classList.add(ok ? "ok" : "bad");
+    if (ok) { good++; }
+    else {
+      const corr = document.createElement("div");
+      corr.className = "write-correct";
+      corr.textContent = "✓ " + card.fr;
+      row.appendChild(corr);
+    }
+    applyGradeState(card.id, ok ? "good" : "bad"); // каждая форма — в общий SRS-прогресс
+  }
+  save();
+  const total = rows.length;
+  const sc = $("writeScore");
+  sc.hidden = false;
+  sc.textContent = good + "/" + total;
+  $("btnCheck").hidden = true;
+  $("btnNextVerb").hidden = false;
+  renderStats(); renderVerbs(); renderProns(); renderGroups();
 }
 
 // ---------- статистика ----------
@@ -344,6 +481,7 @@ function renderStats() {
   renderStorageInfo();
   renderCal();
   renderProns();
+  renderGroups();
 }
 
 // ---------- тренировка по лицам ----------
@@ -470,15 +608,15 @@ function updateSessionPill() { $("sessionPill").textContent = "Сессия " + 
 // ---------- справка ----------
 let helpReturn = "home";
 function showHelp() {
-  helpReturn = !$("viewTrain").hidden ? "train" : (!$("viewDone").hidden ? "done" : "home");
-  ["viewHome", "viewTrain", "viewDone"].forEach((id) => { $(id).hidden = true; });
+  helpReturn = !$("viewTrain").hidden ? "train" : (!$("viewDone").hidden ? "done" : (!$("viewWrite").hidden ? "write" : "home"));
+  ["viewHome", "viewTrain", "viewDone", "viewWrite"].forEach((id) => { $(id).hidden = true; });
   $("viewHelp").hidden = false;
   window.scrollTo(0, 0);
 }
 function goBack() {
   $("viewHelp").hidden = true;
-  if (helpReturn === "train" || helpReturn === "done") {
-    $(helpReturn === "train" ? "viewTrain" : "viewDone").hidden = false; // тренировка/итог живы — состояние не теряем
+  if (helpReturn === "train" || helpReturn === "done" || helpReturn === "write") {
+    $({ train: "viewTrain", done: "viewDone", write: "viewWrite" }[helpReturn]).hidden = false; // состояние не теряем
   } else {
     goHome();
   }
@@ -501,7 +639,7 @@ function renderStorageInfo() {
   }
 }
 function goHome() {
-  $("viewTrain").hidden = true; $("viewDone").hidden = true; $("viewHelp").hidden = true; $("viewHome").hidden = false;
+  $("viewTrain").hidden = true; $("viewDone").hidden = true; $("viewHelp").hidden = true; $("viewWrite").hidden = true; $("viewHome").hidden = false;
   $("btnHome").hidden = true;
   renderStats(); renderVerbs($("verbSearch").value);
 }
@@ -514,15 +652,20 @@ $("btnToHome").onclick = goHome;
 $("btnHome").onclick = goHome;
 $("btnHelp").onclick = () => { $("viewHelp").hidden ? showHelp() : goBack(); }; // повторный клик закрывает
 $("btnHelpBack").onclick = goBack;
+$("btnCheck").onclick = checkWrite;
+$("btnNextVerb").onclick = pickWriteVerb;
+$("writeRows").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !writeChecked) { e.preventDefault(); checkWrite(); }
+});
 $("card").addEventListener("click", (e) => {
   if (e.target.closest(".grade-btns") || e.target.closest("#hintBtn")) return;
   flipped ? unflip() : flip(); // клик — туда-обратно, как пробел
 });
 // Горячие клавиши — на уровне документа, чтобы работали без клика по карточке
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") { // Esc — назад (из справки) или на главную (из тренировки/итогов)
+  if (e.key === "Escape") { // Esc — назад (из справки) или на главную
     if (!$("viewHelp").hidden) goBack();
-    else if (!$("viewTrain").hidden || !$("viewDone").hidden) goHome();
+    else if (!$("viewTrain").hidden || !$("viewDone").hidden || !$("viewWrite").hidden) goHome();
     return;
   }
   const tag = (document.activeElement && document.activeElement.tagName) || "";

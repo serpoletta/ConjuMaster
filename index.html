@@ -86,6 +86,11 @@
     </div>
 
     <div class="panel">
+      <h3>✍️ Письменные спряжения <span class="muted">· впиши все 9 форм глагола</span></h3>
+      <div id="groupList" class="pron-grid"></div>
+    </div>
+
+    <div class="panel">
       <div class="verbs-head">
         <h3>📖 Все глаголы</h3>
         <input id="verbSearch" class="search" type="search" placeholder="Найти глагол… (aller, быть, parler)">
@@ -147,7 +152,7 @@
         <li>Нажми на карточку или <kbd>Пробел</kbd> — откроется правильный ответ и три кнопки:
             ✅ Верно · 🤔 Неуверенно · ❌ Неверно.</li>
         <li>Честно оцени свой ответ: от этого зависит, когда слово вернётся на повторение.</li>
-        <li>Для прицельной отработки есть тренировка одного глагола, одного лица и режим «только трудные».</li>
+        <li>Для прицельной отработки есть тренировка одного глагола, одного лица, письменные спряжения по группам и режим «только трудные».</li>
       </ol>
       <h4>⌨️ Горячие клавиши</h4>
       <ol class="help-list">
@@ -179,6 +184,23 @@
       <div class="row">
         <button class="btn btn-primary" id="btnHelpBack">← Назад</button>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ ПИСЬМЕННАЯ ТРЕНИРОВКА ============ -->
+  <section id="viewWrite" hidden>
+    <div class="train-top">
+      <div class="train-meta"><span id="writeTitle"></span><span id="writeScore" class="pill pill-soft" hidden></span></div>
+    </div>
+    <div class="panel">
+      <h3 id="writeVerb"></h3>
+      <div class="accent-bar" id="accentBar" title="Вставка букв с диакритикой"></div>
+      <div id="writeRows"></div>
+      <div class="row write-actions">
+        <button class="btn btn-primary" id="btnCheck">Проверить</button>
+        <button class="btn btn-soft" id="btnNextVerb" hidden>Следующий глагол →</button>
+      </div>
+      <p class="muted-small">Впиши полную форму с местоимением (например: tu vas). Ошибки тоже идут в статистику повторений.</p>
     </div>
   </section>
 

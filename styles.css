@@ -114,6 +114,17 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .pron-btn b{font-size:17px; color:var(--blue-dark)}
 .pron-btn span{font-size:13px; color:var(--muted)}
 .pron-btn small{font-size:12px; color:var(--green-dark); font-weight:700}
+.write-row{display:grid; grid-template-columns:1fr 1.4fr; gap:10px; align-items:center; margin:8px 0}
+.write-row label{font-size:15px}
+.write-row input{padding:10px 12px; border:2px solid var(--line); border-radius:12px; font-size:16px; width:100%; background:#fff; color:var(--ink)}
+.write-row input:focus{outline:none; border-color:var(--blue)}
+.write-row.ok input{border-color:var(--good); background:#f0fdf4}
+.write-row.bad input{border-color:var(--bad); background:#fef2f2}
+.write-correct{grid-column:2; font-size:13px; color:var(--green-dark); margin-top:-4px}
+.accent-bar{display:flex; gap:6px; flex-wrap:wrap; margin:10px 0}
+.accent-bar button{border:1.5px solid var(--line); background:#f8fdfb; border-radius:10px; padding:6px 11px; font-size:16px; cursor:pointer; color:var(--ink)}
+.accent-bar button:hover{border-color:var(--blue); background:#f0f9ff}
+.write-actions{margin-top:14px}
 .verb-item{border:1.5px solid var(--line); border-radius:14px; padding:10px 12px; background:#fbfefe}
 .verb-item .vi-top{display:flex; gap:8px; align-items:baseline}
 .verb-item .vi-inf{font-weight:800; color:var(--blue-dark)}
@@ -190,4 +201,6 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
   .search{min-width:0; width:100%}
   .card{padding:56px 14px 24px}
   .grade-btns .btn{flex:1 1 140px}
+  .write-row{grid-template-columns:1fr}
+  .write-correct{grid-column:1}
 }
