@@ -125,7 +125,8 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .write-correct{grid-column:2; font-size:13px; color:var(--green-dark); margin-top:-4px}
 .accent-bar{display:flex; gap:6px; flex-wrap:wrap; margin:10px 0}
 .write-head{margin:0 0 2px; font-size:19px}
-.write-top{display:flex; align-items:center; justify-content:space-between; gap:10px}
+.write-top{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap}
+.write-sub{font-size:13px; color:var(--muted); margin-right:auto; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
 .write-top .write-head{margin:0}
 .write-head-row{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
 .write-head-row h3{margin:0}
