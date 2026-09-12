@@ -6,7 +6,7 @@
 "use strict";
 
 const LS_KEY = "conjumaster_v1";
-const APP_VERSION = "1.35"; // = номер CACHE в sw.js (conjumaster-v35); первый релиз — 1.0
+const APP_VERSION = "1.36"; // = номер CACHE в sw.js (conjumaster-v36); первый релиз — 1.0
 const SESSION_SIZE = 10;
 const LEARN_STREAK = 3;   // сколько подряд "верно" нужно для выучивания
 const HARD_FAILS = 3;     // сколько ошибок делает форму трудной
@@ -190,6 +190,7 @@ function startSession(opts) {
   store.session += 1;
   save();
   queue = pickSession(SESSION_SIZE, ids);
+  againAction = null; // итоги обычной тренировки ведут на новую обычную
   pos = 0; flipped = false;
   sessGood = sessMid = sessBad = 0; requeues = 0; sessGrades = [];
   $("viewHome").hidden = true; $("viewDone").hidden = true; $("viewTrain").hidden = false;
@@ -280,16 +281,22 @@ function grade(g) {
 
 function finishSession() {
   save();
-  $("viewTrain").hidden = true; $("viewDone").hidden = false;
-  $("dGood").textContent = sessGood; $("dMid").textContent = sessMid; $("dBad").textContent = sessBad;
+  showDone(sessGood, sessMid, sessBad, sessGrades.filter((x) => x.grade === "bad").map((x) => x.id), "▶ Ещё 10");
+  renderStats(); renderVerbs(); updateSessionPill();
+}
+
+let againAction = null; // что делает кнопка «Ещё» на экране итогов (карточки — новая сессия, письмо — новый батч)
+function showDone(good, mid, bad, badIds, againLabel) {
+  $("dGood").textContent = good; $("dMid").textContent = mid; $("dBad").textContent = bad;
+  $("btnAgain").textContent = againLabel;
   const box = $("doneMistakes");
   box.innerHTML = "";
-  const badIds = [...new Set(sessGrades.filter((x) => x.grade === "bad").map((x) => x.id))].slice(-8); // без дублей
-  if (badIds.length) {
+  const ids = [...new Set(badIds)].slice(-8); // без дублей
+  if (ids.length) {
     const h = document.createElement("p");
     h.className = "muted-small"; h.textContent = "Повтори эти формы:";
     box.appendChild(h);
-    badIds.forEach((id) => {
+    ids.forEach((id) => {
       const c = cardById[id];
       const d = document.createElement("div");
       d.className = "mistake";
@@ -298,12 +305,13 @@ function finishSession() {
       d.children[1].textContent = c.fr;
       box.appendChild(d);
     });
-  } else if (sessGood + sessMid + sessBad > 0) {
+  } else if (good + mid + bad > 0) {
     const p = document.createElement("p");
     p.className = "muted-small"; p.textContent = "Ошибок нет — так держать! 🎉";
     box.appendChild(p);
   }
-  renderStats(); renderVerbs(); updateSessionPill();
+  ["viewHome", "viewTrain", "viewWrite", "viewHelp"].forEach((id) => { $(id).hidden = true; });
+  $("viewDone").hidden = false;
 }
 
 // ---------- письменные спряжения по группам ----------
@@ -340,6 +348,7 @@ function renderGroups() {
 }
 
 let writeGroup = null, writeVerb = -1, writeChecked = false, writeNum = 1;
+let writeGood = 0, writeBad = 0, writeBadIds = [];
 const WRITE_SIZE = 5; // глаголов в одной письменной тренировке
 const ACCENTS = ["é", "è", "ê", "ë", "à", "â", "ç", "î", "ï", "ô", "û", "ù"];
 function normAns(s) {
@@ -366,6 +375,8 @@ function buildAccentBar() {
 function startWrite(g) {
   writeGroup = g;
   writeNum = 1;
+  writeGood = 0; writeBad = 0; writeBadIds = [];
+  againAction = () => startWrite(writeGroup); // «Ещё 5» — новый батч той же группы
   ["viewHome", "viewTrain", "viewDone", "viewHelp"].forEach((id) => { $(id).hidden = true; });
   $("viewWrite").hidden = false;
   $("btnHome").hidden = false;
@@ -432,18 +443,26 @@ function checkWrite() {
       now.textContent = card.fr;
       fix.append(was, document.createTextNode(" → "), now);
       inp.replaceWith(fix);
+      writeBadIds.push(card.id);
     }
     applyGradeState(card.id, ok ? "good" : "bad"); // каждая форма — в общий SRS-прогресс
   }
   save();
   const total = rows.length;
+  writeGood += good;
+  writeBad += total - good;
   const sc = $("writeScore");
   sc.textContent = good + "/" + total;
   sc.classList.remove("ghost");
   $("btnCheck").hidden = true;
-  $("btnNextVerb").hidden = false;
-  $("btnNextVerb").focus(); // Enter после проверки даст следующий глагол
-  renderStats(); renderVerbs(); renderProns(); renderGroups();
+  if (writeNum >= WRITE_SIZE) {
+    showDone(writeGood, 0, writeBad, writeBadIds, "▶ Ещё 5"); // финал батча — как в других тренировках
+    renderStats(); renderVerbs(); renderProns(); renderGroups();
+  } else {
+    $("btnNextVerb").hidden = false;
+    $("btnNextVerb").focus(); // Enter после проверки даст следующий глагол
+    renderStats(); renderVerbs(); renderProns(); renderGroups();
+  }
 }
 
 // ---------- статистика ----------
@@ -659,7 +678,7 @@ function goHome() {
 
 // ---------- события ----------
 $("btnStart").onclick = () => startSession({});
-$("btnAgain").onclick = () => startSession({});
+$("btnAgain").onclick = () => { (againAction || (() => startSession({})))(); };
 $("btnReviewHard").onclick = () => startSession({ onlyDifficult: true });
 $("btnToHome").onclick = goHome;
 $("btnHome").onclick = goHome;
