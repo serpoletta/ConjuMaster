@@ -6,7 +6,7 @@
 "use strict";
 
 const LS_KEY = "conjumaster_v1";
-const APP_VERSION = "1.24"; // = номер CACHE в sw.js (conjumaster-v24); первый релиз — 1.0
+const APP_VERSION = "1.25"; // = номер CACHE в sw.js (conjumaster-v25); первый релиз — 1.0
 const SESSION_SIZE = 10;
 const LEARN_STREAK = 3;   // сколько подряд "верно" нужно для выучивания
 const HARD_FAILS = 3;     // сколько ошибок делает форму трудной
