@@ -125,16 +125,16 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
 .write-correct{grid-column:2; font-size:13px; color:var(--green-dark); margin-top:-4px}
 .accent-bar{display:flex; gap:6px; flex-wrap:wrap; margin:10px 0}
 .write-head{margin:0 0 2px; font-size:19px}
-.write-top{display:flex; align-items:center; gap:10px}
+.write-top{display:flex; align-items:center; justify-content:space-between; gap:10px}
 .write-top .write-head{margin:0}
 .write-head-row{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
 .write-head-row h3{margin:0}
 .write-head-row .accent-bar{margin:0; justify-content:flex-end}
 .accent-bar button{border:1.5px solid var(--line); background:#f8fdfb; border-radius:10px; padding:6px 11px; font-size:16px; cursor:pointer; color:var(--ink)}
 .accent-bar button:hover{border-color:var(--blue); background:#f0f9ff}
-.write-actions{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-top:14px}
-.write-btns{margin-left:auto; display:flex; gap:10px}
-.write-score{font-weight:800; font-size:18px; color:var(--green-dark)}
+.write-actions{display:grid; grid-template-columns:1fr 1.4fr; gap:10px; margin-top:14px}
+.write-btns{grid-column:2; justify-self:end; display:flex; gap:10px}
+.write-score{grid-column:2; font-weight:800; font-size:18px; color:var(--green-dark)}
 .verb-item{border:1.5px solid var(--line); border-radius:14px; padding:10px 12px; background:#fbfefe}
 .verb-item .vi-top{display:flex; gap:8px; align-items:baseline}
 .verb-item .vi-inf{font-weight:800; color:var(--blue-dark)}
@@ -213,4 +213,6 @@ kbd{background:rgba(0,0,0,.08); border-radius:6px; padding:1px 6px; font-size:12
   .grade-btns .btn{flex:1 1 140px}
   .write-row{grid-template-columns:1fr}
   .write-correct{grid-column:1}
+  .write-actions{grid-template-columns:1fr}
+  .write-score,.write-btns{grid-column:1}
 }
