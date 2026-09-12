@@ -6,7 +6,7 @@
 "use strict";
 
 const LS_KEY = "conjumaster_v1";
-const APP_VERSION = "1.25"; // = номер CACHE в sw.js (conjumaster-v25); первый релиз — 1.0
+const APP_VERSION = "1.26"; // = номер CACHE в sw.js (conjumaster-v26); первый релиз — 1.0
 const SESSION_SIZE = 10;
 const LEARN_STREAK = 3;   // сколько подряд "верно" нужно для выучивания
 const HARD_FAILS = 3;     // сколько ошибок делает форму трудной
@@ -655,7 +655,12 @@ $("btnHelpBack").onclick = goBack;
 $("btnCheck").onclick = checkWrite;
 $("btnNextVerb").onclick = pickWriteVerb;
 $("writeRows").addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && !writeChecked) { e.preventDefault(); checkWrite(); }
+  if (e.key !== "Enter" || writeChecked) return;
+  e.preventDefault();
+  const inputs = [...$("writeRows").querySelectorAll("input:not([disabled])")];
+  const i = inputs.indexOf(document.activeElement);
+  if (i >= 0 && i < inputs.length - 1) inputs[i + 1].focus(); // Enter — на следующую строку
+  else checkWrite(); // после последней — проверка
 });
 $("card").addEventListener("click", (e) => {
   if (e.target.closest(".grade-btns") || e.target.closest("#hintBtn")) return;
